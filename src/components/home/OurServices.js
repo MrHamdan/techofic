@@ -126,7 +126,7 @@ export default function OurServices() {
                     Digital Marketing and Branding
                   </Typography>
                   <Typography className={Styles.ourservices_card_para}>
-                    Understanding the business and their target customers, we're
+                    Understanding the business and their target customers, we are
                     the bridges to bring the brand closer to their clients.
                   </Typography>
                   <Typography

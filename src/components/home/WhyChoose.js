@@ -69,7 +69,7 @@ export default function WhyChoose() {
               </Typography>
               <Typography className={Styles.whychoose_card_para}>
                 We thrive in finding the Top 1% IT Talent to fulfill every
-                project's needs. Our team evaluates over 400 applicants every
+                projects needs. Our team evaluates over 400 applicants every
                 year to find the most talented Software Engineers and we provide
                 them continuous and extensive training.
               </Typography>

@@ -47,7 +47,7 @@ export default function Banner() {
               </Typography>
               <Box className={Styles.banner_button_box}>
                 <Button className={Styles.banner_button_style}>
-                  Let's Talk
+                  Lets Talk
                 </Button>
               </Box>
             </Item>
