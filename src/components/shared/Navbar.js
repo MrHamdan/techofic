@@ -38,7 +38,12 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" className={Styles.nav_bg} elevation={0}>
+    <AppBar
+      position="static"
+      className={Styles.nav_bg}
+      elevation={0}
+      sx={{ backgroundColor: "#1d1d1d" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Image
