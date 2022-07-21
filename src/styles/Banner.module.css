@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.banner_bg {
+  background-color: #1d1d1d;
+}
+
+.banner_grid{
+  display: flex;
+  align-items: center;
+  padding: 95px 0px;
+}
+
+.banner_heading_style {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 61px;
+line-height: 71px;
+/* or 116% */
+
+text-transform: capitalize;
+
+color: #F4F4F4;
+text-align: left;
+margin-bottom: 24px;
+
+}
+
+.banner_paragraph_style{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+/* or 175% */
+
+
+color: #F4F4F4;
+
+opacity: 0.6;
+text-align: left;
+margin-bottom: 48px;
+}
+
+
+.banner_button_box{
+    text-align: left;
+}
+
+.banner_button_style{
+    width: 159px;
+height: 54px;
+background: #FEBC14;
+border-radius: 10px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 35px;
+/* identical to box height, or 219% */
+
+
+color: #323232;
+text-transform: none;
+
+}
+
+
+.banner_button_style:hover{
+  background: #FEBC14;
+}
+
+
+.banner_heading_style_colored{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 61px;
+line-height: 71px;
+/* or 116% */
+
+text-transform: capitalize;
+
+color: #FEBC14;
+}

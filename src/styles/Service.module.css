@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+.service_bg{
+    background-color: #222222;
+}
+
+.service_grid{
+    padding: 80px 0px;
+}
+
+.service_heading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 35px;
+/* identical to box height, or 146% */
+
+
+color: #F4F4F4;
+margin-top: 24px;
+}
+
+.service_paragraph{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+color: #F4F4F4;
+margin-top: 16px;
+opacity: 0.6;
+}
