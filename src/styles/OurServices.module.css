@@ -5,7 +5,7 @@
 
 
 .ourservices_bg{
-    background-image: url(../../public/assets/images/servicesbackground.png);
+    background-image: url('../../public/assets/images/servicesbackground.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
