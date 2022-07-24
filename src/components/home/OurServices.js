@@ -32,29 +32,34 @@ export default function OurServices() {
           <Grid container spacing={0} className={Styles.ourservices_grid}>
             <Grid item xs={12} md={12} xl={12}>
               <Item>
-                <Typography sx={{
-                  fontFamily: "Poppins",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  fontSize: "48px",
-                  lineHeight: "72px",
-                  color:'#F4F4F4',
-                }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins",
+                    fontStyle: "normal",
+                    fontWeight: "700",
+                    fontSize: "48px",
+                    lineHeight: "72px",
+                    color: "#F4F4F4",
+                  }}
+                >
                   Our Services
                 </Typography>
               </Item>
             </Grid>
             <Grid item xs={12} md={12} xl={12}>
               <Item>
-                <Typography sx={{
-                  fontFamily: "Lato",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  fontSize: "16px",
-                  lineHeight: "35px",
-                  color:'#F4F4F4',
-                  opacity: "0.6",
-                }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Lato",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    fontSize: "16px",
+                    lineHeight: "35px",
+                    color: "#F4F4F4",
+                    opacity: "0.6",
+                    marginBottom: "40px",
+                  }}
+                >
                   From beginning ideas to individual integrity from the line on
                   the paper to final projects.
                 </Typography>
@@ -75,10 +80,31 @@ export default function OurServices() {
                       width={80}
                       height={80}
                     />
-                    <Typography className={Styles.ourservices_card_heading}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        fontSize: "25px",
+                        lineHeight: "35px",
+                        marginTop: "24px",
+                      }}
+                      className={Styles.ourservices_card_heading}
+                    >
                       Web Design and Developments
                     </Typography>
-                    <Typography className={Styles.ourservices_card_para}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Lato",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        fontSize: "16px",
+                        lineHeight: "26px",
+                        color: "#F4F4F4",
+                        marginBottom: "40px",
+                      }}
+                      className={Styles.ourservices_card_para}
+                    >
                       Provide our customers with optimized user-friendly
                       experience to increase the efficiency of digital products.
                     </Typography>
@@ -88,6 +114,11 @@ export default function OurServices() {
                           xs: "center",
                           md: "center",
                           xl: "left",
+                          fontFamily: "Lato",
+                          fontStyle: "normal",
+                          fontWeight: "700",
+                          fontSize: "16px",
+                          lineHeight: "35px",
                         },
                       }}
                       className={Styles.ourservices_card_link}
@@ -112,10 +143,31 @@ export default function OurServices() {
                       width={80}
                       height={80}
                     />
-                    <Typography className={Styles.ourservices_card_heading}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        fontSize: "25px",
+                        lineHeight: "35px",
+                        marginTop: "24px",
+                      }}
+                      className={Styles.ourservices_card_heading}
+                    >
                       Mobile App and Development
                     </Typography>
-                    <Typography className={Styles.ourservices_card_para}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Lato",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        fontSize: "16px",
+                        lineHeight: "26px",
+                        color: "#F4F4F4",
+                        marginBottom: "40px",
+                      }}
+                      className={Styles.ourservices_card_para}
+                    >
                       Mobile application development is a highlight that
                       businesses are interested in at the moment and in the
                       future.
@@ -126,6 +178,11 @@ export default function OurServices() {
                           xs: "center",
                           md: "center",
                           xl: "left",
+                          fontFamily: "Lato",
+                          fontStyle: "normal",
+                          fontWeight: "700",
+                          fontSize: "16px",
+                          lineHeight: "35px",
                         },
                       }}
                       className={Styles.ourservices_card_link}
@@ -150,10 +207,31 @@ export default function OurServices() {
                       width={80}
                       height={80}
                     />
-                    <Typography className={Styles.ourservices_card_heading}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        fontSize: "25px",
+                        lineHeight: "35px",
+                        marginTop: "24px",
+                      }}
+                      className={Styles.ourservices_card_heading}
+                    >
                       Digital Marketing and Branding
                     </Typography>
-                    <Typography className={Styles.ourservices_card_para}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Lato",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        fontSize: "16px",
+                        lineHeight: "26px",
+                        color: "#F4F4F4",
+                        marginBottom: "40px",
+                      }}
+                      className={Styles.ourservices_card_para}
+                    >
                       Understanding the business and their target customers, we
                       are the bridges to bring the brand closer to their
                       clients.
@@ -164,6 +242,11 @@ export default function OurServices() {
                           xs: "center",
                           md: "center",
                           xl: "left",
+                          fontFamily: "Lato",
+                          fontStyle: "normal",
+                          fontWeight: "700",
+                          fontSize: "16px",
+                          lineHeight: "35px",
                         },
                       }}
                       className={Styles.ourservices_card_link}
@@ -188,10 +271,31 @@ export default function OurServices() {
                       width={80}
                       height={80}
                     />
-                    <Typography className={Styles.ourservices_card_heading}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        fontSize: "25px",
+                        lineHeight: "35px",
+                        marginTop: "24px",
+                      }}
+                      className={Styles.ourservices_card_heading}
+                    >
                       UI/UX Design and Developments
                     </Typography>
-                    <Typography className={Styles.ourservices_card_para}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Lato",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                        fontSize: "16px",
+                        lineHeight: "26px",
+                        color: "#F4F4F4",
+                        marginBottom: "40px",
+                      }}
+                      className={Styles.ourservices_card_para}
+                    >
                       Help you translate your existing design or concept and
                       work with you to develop the ideal design.
                     </Typography>
@@ -201,6 +305,11 @@ export default function OurServices() {
                           xs: "center",
                           md: "center",
                           xl: "left",
+                          fontFamily: "Lato",
+                          fontStyle: "normal",
+                          fontWeight: "700",
+                          fontSize: "16px",
+                          lineHeight: "35px",
                         },
                       }}
                       className={Styles.ourservices_card_link}
