@@ -18,23 +18,44 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Service() {
   return (
-    <Box sx={{ flexGrow: 1 }} className={Styles.service_bg}>
+    <Box sx={{ flexGrow: 1, backgroundColor: "#222222" }}>
       <Container maxWidth="xl">
-        <Grid container spacing={2} className={Styles.service_grid}>
+        <Grid container spacing={2} sx={{ padding: "80px 0px" }}>
           <Grid item xs={12} md={6} xl={3}>
             <Item
               sx={{ textAlign: { xs: "center", md: "center", xl: "left" } }}
             >
               <Image
-                src="/assets/images/discovery.png"
+                src="/assets/images/discovery.svg"
                 alt="Landscape picture"
                 width={80}
                 height={80}
               />
-              <Typography className={Styles.service_heading}>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  fontWeight: "600",
+                  fontSize: "24px",
+                  lineHeight: "35px",
+                  color: "#F4F4F4",
+                  marginTop: "24px",
+                }}
+              >
                 Discovery
               </Typography>
-              <Typography className={Styles.service_paragraph}>
+              <Typography
+                sx={{
+                  fontFamily: "Lato",
+                  fontStyle: "normal",
+                  fontWeight: "500",
+                  fontSize: "16px",
+                  lineHeight: "26px",
+                  color: "#F4F4F4",
+                  opacity: "0.6",
+                  marginTop: "16px",
+                }}
+              >
                 Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
                 ultrices.
               </Typography>
@@ -45,13 +66,36 @@ export default function Service() {
               sx={{ textAlign: { xs: "center", md: "center", xl: "left" } }}
             >
               <Image
-                src="/assets/images/design.png"
+                src="/assets/images/design.svg"
                 alt="Landscape picture"
                 width={80}
                 height={80}
               />
-              <Typography className={Styles.service_heading}>Design</Typography>
-              <Typography className={Styles.service_paragraph}>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  fontWeight: "600",
+                  fontSize: "24px",
+                  lineHeight: "35px",
+                  color: "#F4F4F4",
+                  marginTop: "24px",
+                }}
+              >
+                Design
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Lato",
+                  fontStyle: "normal",
+                  fontWeight: "500",
+                  fontSize: "16px",
+                  lineHeight: "26px",
+                  color: "#F4F4F4",
+                  opacity: "0.6",
+                  marginTop: "16px",
+                }}
+              >
                 Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
                 ultrices.
               </Typography>
@@ -62,15 +106,36 @@ export default function Service() {
               sx={{ textAlign: { xs: "center", md: "center", xl: "left" } }}
             >
               <Image
-                src="/assets/images/development.png"
+                src="/assets/images/development.svg"
                 alt="Landscape picture"
                 width={80}
                 height={80}
               />
-              <Typography className={Styles.service_heading}>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  fontWeight: "600",
+                  fontSize: "24px",
+                  lineHeight: "35px",
+                  color: "#F4F4F4",
+                  marginTop: "24px",
+                }}
+              >
                 Development
               </Typography>
-              <Typography className={Styles.service_paragraph}>
+              <Typography
+                sx={{
+                  fontFamily: "Lato",
+                  fontStyle: "normal",
+                  fontWeight: "500",
+                  fontSize: "16px",
+                  lineHeight: "26px",
+                  color: "#F4F4F4",
+                  opacity: "0.6",
+                  marginTop: "16px",
+                }}
+              >
                 Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
                 ultrices.
               </Typography>
@@ -81,15 +146,36 @@ export default function Service() {
               sx={{ textAlign: { xs: "center", md: "center", xl: "left" } }}
             >
               <Image
-                src="/assets/images/deliver.png"
+                src="/assets/images/deliver.svg"
                 alt="Landscape picture"
                 width={80}
                 height={80}
               />
-              <Typography className={Styles.service_heading}>
+              <Typography
+                sx={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  fontWeight: "600",
+                  fontSize: "24px",
+                  lineHeight: "35px",
+                  color: "#F4F4F4",
+                  marginTop: "24px",
+                }}
+              >
                 Delivery
               </Typography>
-              <Typography className={Styles.service_paragraph}>
+              <Typography
+                sx={{
+                  fontFamily: "Lato",
+                  fontStyle: "normal",
+                  fontWeight: "500",
+                  fontSize: "16px",
+                  lineHeight: "26px",
+                  color: "#F4F4F4",
+                  opacity: "0.6",
+                  marginTop: "16px",
+                }}
+              >
                 Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
                 ultrices.
               </Typography>

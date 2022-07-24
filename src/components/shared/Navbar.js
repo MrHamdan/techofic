@@ -14,9 +14,50 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Image from "next/image";
 import Styles from "../../styles/Navbar.module.css";
+import { styled } from "@mui/material/styles";
+import Link from "next/link";
+
+
 
 const pages = ["About Us", "Services", "Products", "Blogs", "Pages"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
+
+
+const CustomLinkButton = styled(Button) ({
+  fontFamily:'Lato',
+  fontStyle:'normal',
+  fontWeight:'500',
+  fontSize:'18px',
+  lineHeight:'26px',
+  color:'white',
+  textTransform:'none',
+  '&:hover': {
+    color:'#febc14'
+  }
+})
+
+const ContactUsButton = styled(Button)({
+  width: "159px",
+  height: "48px",
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: "700",
+  fontSize: "16px",
+  lineHeight: "35px",
+  borderRadius: "10px",
+  textTransform:'none',
+  border: "1px solid #febc14",
+  backgroundColor: "transparent",
+  color: "white",
+  "&:hover": {
+    backgroundColor: "#febc14",
+    color: "#1d1d1d",
+  },
+});
+
+const CustomAppbar = styled(AppBar)({
+  backgroundColor: "#1d1d1d",
+})
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,17 +79,17 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" className={Styles.nav_bg} elevation={0}>
+    <CustomAppbar position="static" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Image
-            src="/assets/images/techoficlogo.png"
+            src="/assets/images/techoficlogo.svg"
             alt="Techofic logo"
             width={32.64}
             height={39.19}
           />
           <Image
-            src="/assets/images/techoficlogotext.png"
+            src="/assets/images/techoficlogotext.svg"
             alt="Techofic logo"
             width={144.14}
             height={19.92}
@@ -115,25 +156,49 @@ const Navbar = () => {
               justifyContent: "center",
             }}
           >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-                className={Styles.nav_links_style}
-              >
-                {page}
-              </Button>
-            ))}
+            <CustomLinkButton
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+              
+            >
+              <Link href="/">About Us</Link>
+            </CustomLinkButton>
+            <CustomLinkButton
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+              
+            >
+              <Link href="/">Services</Link>
+            </CustomLinkButton>
+            <CustomLinkButton
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+              
+            >
+              <Link href="/">Products</Link>
+            </CustomLinkButton>
+            <CustomLinkButton
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+              
+            >
+              <Link href="/">Blogs</Link>
+            </CustomLinkButton>
+            <CustomLinkButton
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+              
+            >
+              <Link href="/">Pages</Link>
+            </CustomLinkButton>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button
-              className={Styles.nav_button_style}
+            <ContactUsButton
               sx={{ display: { xs: "none", md: "block", xl: "block" } }}
             >
               Contact Us
-            </Button>
+            </ContactUsButton>
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
@@ -159,7 +224,7 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    </CustomAppbar>
   );
 };
 export default Navbar;

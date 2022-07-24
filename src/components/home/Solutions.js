@@ -27,7 +27,7 @@ export default function Solutions() {
           <Grid item xs={12} md={6} xl={6}>
             <Item>
               <Image
-                src="/assets/images/solutionsimage.png"
+                src="/assets/images/solutionsimage.svg"
                 alt="Landscape picture"
                 width={542.56}
                 height={517}
