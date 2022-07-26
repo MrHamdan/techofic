@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../shared/Footer';
 import Navbar from '../shared/Navbar';
 import Banner from './Banner';
 import Contact from './Contact';
@@ -17,6 +18,7 @@ const Homepage = () => {
             <Solutions/>
             <WhyChoose/>
             <Contact/>
+            <Footer/>
         </div>
     );
 };

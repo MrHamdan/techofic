@@ -19,10 +19,22 @@ function CustomExpandIcon() {
       }}
     >
       <div className="expandIconWrapper">
-        <RemoveIcon sx={{ color: "white" }} />
+        <RemoveIcon
+          sx={{
+            color: "white",
+            backgroundColor: "#403e4a",
+            borderRadius: "50%",
+          }}
+        />
       </div>
       <div className="collapsIconWrapper">
-        <AddIcon sx={{ color: "white" }} />
+        <AddIcon
+          sx={{
+            color: "white",
+            backgroundColor: "#403e4a",
+            borderRadius: "50%",
+          }}
+        />
       </div>
     </Box>
   );

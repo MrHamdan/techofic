@@ -18,3 +18,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
+  border-radius: 15px;
+}

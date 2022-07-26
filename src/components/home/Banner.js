@@ -30,6 +30,7 @@ const BannerButton = styled(Button) ({
   lineHeight:'35px',
   color:'#323232',
   textTransform:'none',
+  margin:'6px',
   '&:hover': {
     backgroundColor:'#FEBC14',
   }
@@ -39,8 +40,12 @@ export default function Banner() {
   return (
     <Box sx={{ flexGrow: 1, backgroundColor: "#1d1d1d" }}>
       <Container maxWidth="xl">
-        <Grid container spacing={2} sx={{display:'flex', alignItems: 'center', padding:'95px 0px'}}>
-          <Grid item xs={12} md={6} xl={6}>
+        <Grid
+          container
+          spacing={2}
+          sx={{ display: "flex", alignItems: "center", padding: "95px 0px" }}
+        >
+          <Grid item xs={12} md={6} xl={6} sx={{}}>
             <Item>
               <Typography
                 sx={{
@@ -52,7 +57,7 @@ export default function Banner() {
                   textTransform: "capitalize",
                   color: "#F4F4F4",
                   textAlign: "left",
-                  marginBottom:'24px',
+                  marginBottom: "24px",
                 }}
               >
                 We Execute{" "}
@@ -88,25 +93,34 @@ export default function Banner() {
                   Softwares
                 </Typography>
               </Typography>
-              <Typography sx={{
-                fontFamily: "Lato",
-                fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "20px",
-                lineHeight: "35px",
-                color:"#F4F4F4",
-                opacity:"0.6",
-                textAlign:'left',
-                marginBottom:'48px',
-              }}>
+              <Typography
+                sx={{
+                  fontFamily: "Lato",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  fontSize: "20px",
+                  lineHeight: "35px",
+                  color: "#F4F4F4",
+                  opacity: "0.6",
+                  textAlign: "left",
+                  marginBottom: "48px",
+                }}
+              >
                 Techofic is one of the leading software development companies,
                 helping clients transform their existing businesses in light of
                 the swiftly evolving nature of digital innovation.
               </Typography>
-              <Box sx={{textAlign:'left'}}>
-                <BannerButton>
-                  Lets Talk
-                </BannerButton>
+              <Box sx={{ textAlign: "left", position: "relative" }}>
+                <Box
+                  sx={{
+                    width: "159px",
+                    height: "54px",
+                    border: "2px solid #8752A1",
+                    position: "absolute",
+                    borderRadius: "10px",
+                  }}
+                ></Box>
+                <BannerButton>Lets Talk</BannerButton>
               </Box>
             </Item>
           </Grid>

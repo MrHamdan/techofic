@@ -105,3 +105,55 @@ border-radius: 15px;
 background-color: transparent;
 color:white;
 }
+
+.contact_form_email{
+    display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #FEBC14;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+}
+
+.contact_form_interest{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #FEBC14;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+}
+
+.contact_form_option{
+  color:black;
+}
+
+.contact_form_description{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #FEBC14;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+resize: none;
+height: 120px;
+overflow: hidden;
+}

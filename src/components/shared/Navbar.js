@@ -94,7 +94,7 @@ const Navbar = () => {
             width={144.14}
             height={19.92}
           />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent:'right' }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -103,7 +103,7 @@ const Navbar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{color:'#febc14'}}/>
             </IconButton>
             <Menu
               id="menu-appbar"

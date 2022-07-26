@@ -30,7 +30,9 @@ export default function Solutions() {
     >
       <Box sx={{ flexGrow: 1 }}>
         <Container maxWidth="xl">
-          <Grid container spacing={2} className={Styles.solutions_grid}>
+          <Grid container spacing={2} sx={{
+            padding:'200px 0px'
+          }}>
             <Grid item xs={12} md={6} xl={6}>
               <Item>
                 <Image
@@ -45,21 +47,57 @@ export default function Solutions() {
               <Item
                 sx={{ textAlign: { xs: "center", md: "center", xl: "left" } }}
               >
-                <Typography className={Styles.solutions_heading}>
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins",
+                    fontStyle: "normal",
+                    fontWeight: "700",
+                    fontSize: "48px",
+                    lineHeight: "58px",
+                    color: "#F4F4F4",
+                    marginBottom: "34px",
+                  }}
+                >
                   We provide It Solutions & Services
                 </Typography>
-                <Accordion className={Styles.solutions_accordion_style}>
+                <Accordion
+                  sx={{
+                    backgroundColor: "#2B262E",
+                    border: "1px solid #8752A1",
+                    borderRadius: "4px",
+                    marginBottom: "20px",
+                  }}
+                >
                   <AccordionSummary
                     expandIcon={<CustomExpandIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography className={Styles.solutions_accordion_heading}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        fontSize: "25px",
+                        lineHeight: "35px",
+                        color: "#F4F4F4",
+                      }}
+                    >
                       Who Are We?
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography className={Styles.solutions_accordion_para}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Lato",
+                        fontStyle: "normal",
+                        fontWeight: "500",
+                        fontSize: "20px",
+                        lineHeight: "35px",
+                        color: "#F4F4F4",
+                        opacity: "0.6",
+                      }}
+                    >
                       We are a growing startup software agency where we strive
                       to provide the best service worldwide. We had a remote
                       team working from different parts of the world. Our team
@@ -67,18 +105,44 @@ export default function Solutions() {
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
-                <Accordion className={Styles.solutions_accordion_style}>
+                <Accordion
+                  sx={{
+                    backgroundColor: "#2B262E",
+                    border: "1px solid #8752A1",
+                    borderRadius: "4px",
+                    marginBottom: "20px",
+                  }}
+                >
                   <AccordionSummary
                     expandIcon={<CustomExpandIcon />}
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Typography className={Styles.solutions_accordion_heading}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        fontSize: "25px",
+                        lineHeight: "35px",
+                        color: "#F4F4F4",
+                      }}
+                    >
                       Our Mission
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography className={Styles.solutions_accordion_para}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Lato",
+                        fontStyle: "normal",
+                        fontWeight: "500",
+                        fontSize: "20px",
+                        lineHeight: "35px",
+                        color: "#F4F4F4",
+                        opacity: "0.6",
+                      }}
+                    >
                       We are a growing startup software agency where we strive
                       to provide the best service worldwide. We had a remote
                       team working from different parts of the world. Our team
@@ -86,18 +150,44 @@ export default function Solutions() {
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
-                <Accordion className={Styles.solutions_accordion_style}>
+                <Accordion
+                  sx={{
+                    backgroundColor: "#2B262E",
+                    border: "1px solid #8752A1",
+                    borderRadius: "4px",
+                    marginBottom: "20px",
+                  }}
+                >
                   <AccordionSummary
                     expandIcon={<CustomExpandIcon />}
                     aria-controls="panel3a-content"
                     id="panel3a-header"
                   >
-                    <Typography className={Styles.solutions_accordion_heading}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontStyle: "normal",
+                        fontWeight: "600",
+                        fontSize: "25px",
+                        lineHeight: "35px",
+                        color: "#F4F4F4",
+                      }}
+                    >
                       Our Vission
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography className={Styles.solutions_accordion_para}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Lato",
+                        fontStyle: "normal",
+                        fontWeight: "500",
+                        fontSize: "20px",
+                        lineHeight: "35px",
+                        color: "#F4F4F4",
+                        opacity: "0.6",
+                      }}
+                    >
                       We are a growing startup software agency where we strive
                       to provide the best service worldwide. We had a remote
                       team working from different parts of the world. Our team
