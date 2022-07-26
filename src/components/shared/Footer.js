@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { Container, IconButton, InputAdornment, TextField, Typography } from "@mui/material";
+import { Container, Divider, IconButton, InputAdornment, TextField, Typography } from "@mui/material";
 import Image from "next/image";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -422,6 +422,33 @@ export default function Footer() {
                     </Grid>
                   </Grid>
                 </Box>
+              </Item>
+            </Grid>
+            <Grid item xs={12}>
+              <Item>
+                <Divider sx={{ backgroundColor: "#A7A7A7", marginBottom:'16.35px', opacity:'0.1' }} />
+                <Typography
+                  sx={{
+                    fontFamily: "Lato",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    fontSize: "16px",
+                    lineHeight: "19px",
+                    color: "#F4F4F4",
+                    opacity: "0.6",
+                  }}
+                >
+                  &copy; 2022 All Rights Reserved. Design By{" "}
+                  <Typography sx={{
+                    fontFamily: "Lato",
+                    fontStyle: "normal",
+                    fontWeight: "400",
+                    fontSize: "16px",
+                    lineHeight: "19px",
+                    color: "#FEBC14",
+
+                  }} component='span'>Techofic</Typography>.
+                </Typography>
               </Item>
             </Grid>
           </Grid>

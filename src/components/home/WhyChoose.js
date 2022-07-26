@@ -73,8 +73,22 @@ export default function WhyChoose() {
                   textAlign: { xs: "center", md: "center", xl: "left" },
                   border: "2px solid #8752A1",
                   borderRadius: "10px",
+                  position: "relative",
+                  zIndex: 1,
+                  padding: "24px",
                 }}
               >
+                <Box
+                  sx={{
+                    border: "1px solid #febc14",
+                    width: "121px",
+                    position: "absolute",
+                    right: 0,
+                    bottom: 20,
+                    opacity: 0.5,
+                    zIndex: -1,
+                  }}
+                ></Box>
                 <Typography
                   sx={{
                     fontFamily: "Poppins",
@@ -111,8 +125,22 @@ export default function WhyChoose() {
                   textAlign: { xs: "center", md: "center", xl: "left" },
                   border: "2px solid #8752A1",
                   borderRadius: "10px",
+                  position: "relative",
+                  zIndex: 1,
+                  padding: "24px",
                 }}
               >
+                <Box
+                  sx={{
+                    border: "1px solid #febc14",
+                    width: "121px",
+                    position: "absolute",
+                    left: 0,
+                    bottom: 20,
+                    opacity: 0.5,
+                    zIndex: -1,
+                  }}
+                ></Box>
                 <Typography
                   sx={{
                     fontFamily: "Poppins",
@@ -148,8 +176,22 @@ export default function WhyChoose() {
                   textAlign: { xs: "center", md: "center", xl: "left" },
                   border: "2px solid #8752A1",
                   borderRadius: "10px",
+                  position: "relative",
+                  zIndex: 1,
+                  padding: "24px",
                 }}
               >
+                <Box
+                  sx={{
+                    border: "1px solid #febc14",
+                    width: "121px",
+                    position: "absolute",
+                    left: 0,
+                    bottom: 20,
+                    opacity: 0.5,
+                    zIndex: -1,
+                  }}
+                ></Box>
                 <Typography
                   sx={{
                     fontFamily: "Poppins",
@@ -186,8 +228,22 @@ export default function WhyChoose() {
                   textAlign: { xs: "center", md: "center", xl: "left" },
                   border: "2px solid #8752A1",
                   borderRadius: "10px",
+                  position: "relative",
+                  zIndex: 1,
+                  padding: "24px",
                 }}
               >
+                <Box
+                  sx={{
+                    border: "1px solid #febc14",
+                    width: "121px",
+                    position: "absolute",
+                    right: 0,
+                    bottom: 20,
+                    opacity: 0.5,
+                    zIndex: -1,
+                  }}
+                ></Box>
                 <Typography
                   sx={{
                     fontFamily: "Poppins",
@@ -221,9 +277,7 @@ export default function WhyChoose() {
               <Item
                 sx={{ textAlign: { xs: "center", md: "center", xl: "center" } }}
               >
-                <SolutionsButton>
-                  Start a Business With Us
-                </SolutionsButton>
+                <SolutionsButton>Start a Business With Us</SolutionsButton>
               </Item>
             </Grid>
           </Grid>

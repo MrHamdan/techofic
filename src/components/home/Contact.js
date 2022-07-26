@@ -61,7 +61,15 @@ export default function Contact() {
           >
             <Grid item xs={12} md={12} xl={12}>
               <Item>
-                <Typography className={Styles.contact_heading}>
+                <Typography sx={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  fontWeight: "700",
+                  fontSize: "48px",
+                  lineHeight: "72px",
+                  color: "#F4F4F4",
+                  marginBottom:'48px',
+                }}>
                   Contact Now
                 </Typography>
               </Item>
@@ -69,14 +77,22 @@ export default function Contact() {
             <Grid item xs={12} md={6} xl={6}>
               <Item
                 sx={{
-                  textAlign: { xs: "left", md: "center", xl: "left" },
+                  textAlign: { xs: "left", md: "left", xl: "left" },
                   border: "1px solid #8752A1",
                   background: "#212121",
                   borderRadius: "10px",
                   padding: "40px",
                 }}
               >
-                <Typography className={Styles.contact_form_heading}>
+                <Typography sx={{
+                  fontFamily: "Poppins",
+                  fontStyle: "normal",
+                  fontWeight: "600",
+                  fontSize: "25px",
+                  lineHeight: "38px",
+                  color: "#F4F4F4",
+                  marginBottom: "16px",
+                }}>
                   Get in touch
                 </Typography>
                 <Box>
