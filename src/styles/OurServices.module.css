@@ -101,3 +101,25 @@ color: #F4F4F4;
     color: #febc14;
     cursor: pointer;
 }
+
+
+
+.ourservices_item:hover .box_design{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border: 1px solid #FEBC14;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: -8px !important;
+    margin-left: -8px !important;
+}
+
+
+.ourservices_item:hover .img_style{
+    width: 80px !important;
+    height: 80px !important;
+    border: 1px solid #FEBC14 !important;
+    border-radius: 10px;
+    
+}

@@ -30,7 +30,6 @@ const BannerButton = styled(Button) ({
   lineHeight:'35px',
   color:'#323232',
   textTransform:'none',
-  margin:'6px',
   '&:hover': {
     backgroundColor:'#FEBC14',
   }
@@ -118,6 +117,7 @@ export default function Banner() {
                     border: "2px solid #8752A1",
                     position: "absolute",
                     borderRadius: "10px",
+                    margin:'-6px'
                   }}
                 ></Box>
                 <BannerButton>Lets Talk</BannerButton>

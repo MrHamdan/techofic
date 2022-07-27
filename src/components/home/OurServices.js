@@ -71,14 +71,18 @@ export default function OurServices() {
                   <Item
                     sx={{
                       textAlign: { xs: "center", md: "center", xl: "left" },
+                      position: "relative",
+                      padding: "0px 32px",
                     }}
                     className={Styles.ourservices_item}
                   >
+                    <Box className={Styles.box_design}></Box>
                     <Image
                       src="/assets/images/webdesign.svg"
                       alt="webdesign picture"
                       width={80}
                       height={80}
+                      className={Styles.img_style}
                     />
                     <Typography
                       sx={{
@@ -134,9 +138,12 @@ export default function OurServices() {
                   <Item
                     sx={{
                       textAlign: { xs: "center", md: "center", xl: "left" },
+                      position: "relative",
+                      padding: "0px 32px",
                     }}
                     className={Styles.ourservices_item}
                   >
+                    <Box className={Styles.box_design}></Box>
                     <Image
                       src="/assets/images/mobileapp.svg"
                       alt="mobileapp picture"
@@ -198,9 +205,12 @@ export default function OurServices() {
                   <Item
                     sx={{
                       textAlign: { xs: "center", md: "center", xl: "left" },
+                      position: "relative",
+                      padding: "0px 32px",
                     }}
                     className={Styles.ourservices_item}
                   >
+                    <Box className={Styles.box_design}></Box>
                     <Image
                       src="/assets/images/digitalmarketing.svg"
                       alt="digitalmarketing picture"
@@ -262,9 +272,12 @@ export default function OurServices() {
                   <Item
                     sx={{
                       textAlign: { xs: "center", md: "center", xl: "left" },
+                      position: "relative",
+                      padding: "0px 32px",
                     }}
                     className={Styles.ourservices_item}
                   >
+                    <Box className={Styles.box_design}></Box>
                     <Image
                       src="/assets/images/uiuxdesign.svg"
                       alt="uiuxdesign picture"
