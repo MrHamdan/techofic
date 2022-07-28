@@ -17,24 +17,21 @@ import Styles from "../../styles/Navbar.module.css";
 import { styled } from "@mui/material/styles";
 import Link from "next/link";
 
-
-
 const pages = ["About Us", "Services", "Products", "Blogs", "Pages"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-
-const CustomLinkButton = styled(Button) ({
-  fontFamily:'Lato',
-  fontStyle:'normal',
-  fontWeight:'500',
-  fontSize:'18px',
-  lineHeight:'26px',
-  color:'white',
-  textTransform:'none',
-  '&:hover': {
-    color:'#febc14'
-  }
-})
+const CustomLinkButton = styled(Button)({
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: "500",
+  fontSize: "18px",
+  lineHeight: "26px",
+  color: "white",
+  textTransform: "none",
+  "&:hover": {
+    color: "#febc14",
+  },
+});
 
 const ContactUsButton = styled(Button)({
   width: "159px",
@@ -45,7 +42,7 @@ const ContactUsButton = styled(Button)({
   fontSize: "16px",
   lineHeight: "35px",
   borderRadius: "10px",
-  textTransform:'none',
+  textTransform: "none",
   border: "1px solid #febc14",
   backgroundColor: "transparent",
   color: "white",
@@ -57,7 +54,7 @@ const ContactUsButton = styled(Button)({
 
 const CustomAppbar = styled(AppBar)({
   backgroundColor: "#1d1d1d",
-})
+});
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -94,7 +91,13 @@ const Navbar = () => {
             width={144.14}
             height={19.92}
           />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, justifyContent:'right' }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              justifyContent: "right",
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -103,7 +106,7 @@ const Navbar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon sx={{color:'#febc14'}}/>
+              <MenuIcon sx={{ color: "#febc14" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -130,25 +133,7 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography> */}
+
           <Box
             sx={{
               flexGrow: 1,
@@ -159,35 +144,36 @@ const Navbar = () => {
             <CustomLinkButton
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
-              
+            >
+              <Link href="/">Academy</Link>
+            </CustomLinkButton>
+            <CustomLinkButton
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
             >
               <Link href="/">About Us</Link>
             </CustomLinkButton>
             <CustomLinkButton
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
-              
             >
               <Link href="/">Services</Link>
             </CustomLinkButton>
             <CustomLinkButton
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
-              
             >
               <Link href="/">Products</Link>
             </CustomLinkButton>
             <CustomLinkButton
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
-              
             >
               <Link href="/">Blogs</Link>
             </CustomLinkButton>
             <CustomLinkButton
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
-              
             >
               <Link href="/">Pages</Link>
             </CustomLinkButton>

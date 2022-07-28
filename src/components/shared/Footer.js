@@ -30,7 +30,7 @@ const FooterSubscription = styled(TextField)({
   },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
-      borderColor: "#FEBC14",
+      borderColor: "#727272",
       borderRadius: "15px",
     },
     "&:hover fieldset": {
@@ -102,10 +102,37 @@ export default function Footer() {
                 >
                   Follow Us On
                 </Typography>
-                <InstagramIcon sx={{ color: "#FEBC14", marginRight: "24px" }} />{" "}
-                <FacebookIcon sx={{ color: "#FEBC14", marginRight: "24px" }} />{" "}
-                <TwitterIcon sx={{ color: "#FEBC14", marginRight: "24px" }} />{" "}
-                <LinkedInIcon sx={{ color: "#FEBC14" }} />
+                <InstagramIcon
+                  sx={{
+                    color: "#727272",
+                    marginRight: "24px",
+                    "&:hover": { color: "#FEBC14" },
+                    cursor: "pointer",
+                  }}
+                />{" "}
+                <FacebookIcon
+                  sx={{
+                    color: "#727272",
+                    marginRight: "24px",
+                    "&:hover": { color: "#FEBC14" },
+                    cursor: "pointer",
+                  }}
+                />{" "}
+                <TwitterIcon
+                  sx={{
+                    color: "#727272",
+                    marginRight: "24px",
+                    "&:hover": { color: "#FEBC14" },
+                    cursor: "pointer",
+                  }}
+                />{" "}
+                <LinkedInIcon
+                  sx={{
+                    color: "#727272",
+                    "&:hover": { color: "#FEBC14" },
+                    cursor: "pointer",
+                  }}
+                />
               </Item>
             </Grid>
             <Grid item xs={12} md={2} xl={2}>
@@ -326,6 +353,7 @@ export default function Footer() {
                                   <SendIcon
                                     sx={{
                                       color: "black",
+                                      fontSize: "20px",
                                     }}
                                   />
                                 </IconButton>
@@ -426,7 +454,13 @@ export default function Footer() {
             </Grid>
             <Grid item xs={12}>
               <Item>
-                <Divider sx={{ backgroundColor: "#A7A7A7", marginBottom:'16.35px', opacity:'0.1' }} />
+                <Divider
+                  sx={{
+                    backgroundColor: "#A7A7A7",
+                    marginBottom: "16.35px",
+                    opacity: "0.1",
+                  }}
+                />
                 <Typography
                   sx={{
                     fontFamily: "Lato",
@@ -439,15 +473,20 @@ export default function Footer() {
                   }}
                 >
                   &copy; 2022 All Rights Reserved. Design By{" "}
-                  <Typography sx={{
-                    fontFamily: "Lato",
-                    fontStyle: "normal",
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    lineHeight: "19px",
-                    color: "#FEBC14",
-
-                  }} component='span'>Techofic</Typography>.
+                  <Typography
+                    sx={{
+                      fontFamily: "Lato",
+                      fontStyle: "normal",
+                      fontWeight: "400",
+                      fontSize: "16px",
+                      lineHeight: "19px",
+                      color: "#FEBC14",
+                    }}
+                    component="span"
+                  >
+                    Techofic
+                  </Typography>
+                  .
                 </Typography>
               </Item>
             </Grid>

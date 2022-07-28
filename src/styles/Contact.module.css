@@ -99,12 +99,49 @@ text-transform: none;
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
-  border: 1px solid #FEBC14;
+  border: 1px solid #727272;
   height: 54px;
 border-radius: 15px;
 background-color: transparent;
 color:white;
 }
+
+.contact_form_name:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_email:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_interest:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_name:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_description:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_email:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_interest:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_description:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
 
 .contact_form_email{
     display: block;
@@ -114,7 +151,7 @@ color:white;
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
-  border: 1px solid #FEBC14;
+  border: 1px solid #727272;
   height: 54px;
 border-radius: 15px;
 background-color: transparent;
@@ -129,7 +166,7 @@ color:white;
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
-  border: 1px solid #FEBC14;
+  border: 1px solid #727272;
   height: 54px;
 border-radius: 15px;
 background-color: transparent;
@@ -146,9 +183,8 @@ color:white;
   width: 100%;
   border-radius: 4px;
   padding: 10px 15px;
-  margin-bottom: 10px;
   font-size: 14px;
-  border: 1px solid #FEBC14;
+  border: 1px solid #727272;
   height: 54px;
 border-radius: 15px;
 background-color: transparent;

@@ -130,6 +130,7 @@ export default function Contact() {
                     </Typography>
                     <input
                       {...register("Email")}
+                      placeholder="Enter your email here..."
                       className={Styles.contact_form_email}
                     />{" "}
                     <br />
@@ -188,9 +189,12 @@ export default function Contact() {
                       className={Styles.contact_form_description}
                     />{" "}
                     <br />
-                    <Typography>
+                    <Typography sx={{marginBottom:'26px'}}>
                       <Checkbox {...register("terms")}  required sx={{
-                        color:'#FEBC14',
+                        color:'#727272',
+                        '&:hover': {
+                          color:'#febc14',
+                        },
                         '&.Mui-checked': {
                           color:'#FEBC14',
                         }
