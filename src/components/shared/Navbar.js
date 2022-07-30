@@ -16,6 +16,10 @@ import Image from "next/image";
 import Styles from "../../styles/Navbar.module.css";
 import { styled } from "@mui/material/styles";
 import Link from "next/link";
+import { Divider, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
+
+const drawerWidth = 240;
+const navItems = ["Home", "About", "Contact"];
 
 const pages = ["About Us", "Services", "Products", "Blogs", "Pages"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -53,6 +57,33 @@ const ContactUsButton = styled(Button)({
 });
 
 const Navbar = (props) => {
+  const { window } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <Typography variant="h6" sx={{ my: 2 }}>
+        MUI
+      </Typography>
+      <Divider />
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item} disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText primary={item} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -72,145 +103,124 @@ const Navbar = (props) => {
   };
 
   return (
-    <AppBar
-      position="static"
-      elevation={0}
-      sx={{ backgroundColor: props.color }}
-    >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Image
-            src="/assets/images/techoficlogo.svg"
-            alt="Techofic logo"
-            width={32.64}
-            height={39.19}
-          />
-          <Image
-            src="/assets/images/techoficlogotext.svg"
-            alt="Techofic logo"
-            width={144.14}
-            height={19.92}
-          />
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-              justifyContent: "right",
-            }}
-          >
+    <Box>
+      <AppBar
+        position="static"
+        elevation={0}
+        sx={{ backgroundColor: props.color }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Image
+              src="/assets/images/techoficlogo.svg"
+              alt="Techofic logo"
+              width={32.64}
+              height={39.19}
+            />
+            <Image
+              src="/assets/images/techoficlogotext.svg"
+              alt="Techofic logo"
+              width={144.14}
+              height={19.92}
+            />
             <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
               color="inherit"
-            >
-              <MenuIcon sx={{ color: "#febc14" }} />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
               sx={{
-                display: { xs: "block", md: "none" },
+                mr: 0,
+                flexGrow: 1,
+                display: { xs: "flex", md: "none", xl: "none", lg: "none" },
+                justifyContent:'right'
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+              <MenuIcon sx={{color:'#FEBC14'}}/>
+            </IconButton>
 
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "center",
-            }}
-          >
-            <CustomLinkButton
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                justifyContent: "center",
+              }}
             >
-              <Link href="/">Academy</Link>
-            </CustomLinkButton>
-            <CustomLinkButton
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <Link href="/">About Us</Link>
-            </CustomLinkButton>
-            <CustomLinkButton
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <Link href="/">Services</Link>
-            </CustomLinkButton>
-            <CustomLinkButton
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <Link href="/">Products</Link>
-            </CustomLinkButton>
-            <CustomLinkButton
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <Link href="/">Blogs</Link>
-            </CustomLinkButton>
-            <CustomLinkButton
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <Link href="/">Pages</Link>
-            </CustomLinkButton>
-          </Box>
+              <CustomLinkButton
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link href="/academy">Academy</Link>
+              </CustomLinkButton>
+              <CustomLinkButton
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link href="/">About Us</Link>
+              </CustomLinkButton>
+              <CustomLinkButton
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link href="/">Services</Link>
+              </CustomLinkButton>
+              <CustomLinkButton
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link href="/">Products</Link>
+              </CustomLinkButton>
+              <CustomLinkButton
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link href="/">Blogs</Link>
+              </CustomLinkButton>
+              <CustomLinkButton
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link href="/">Pages</Link>
+              </CustomLinkButton>
+            </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <ContactUsButton
-              sx={{ display: { xs: "none", md: "block", xl: "block" } }}
-            >
-              Contact Us
-            </ContactUsButton>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+            <Box sx={{ flexGrow: 0 }}>
+              <ContactUsButton
+                sx={{ display: { xs: "none", md: "block", xl: "block" } }}
+              >
+                Contact Us
+              </ContactUsButton>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+      <Box component="nav">
+        <Drawer
+          anchor="right"
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Better open performance on mobile.
+          }}
+          sx={{
+            display: {
+              xs: "block",
+              sm: "block",
+              md: "block",
+              lg: "none",
+              xl: "none",
+            },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+    </Box>
   );
 };
 export default Navbar;

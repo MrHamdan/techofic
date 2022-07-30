@@ -41,7 +41,7 @@ export default function Banner() {
       <Container maxWidth="xl">
         <Grid
           container
-          spacing={2}
+          spacing={0}
           sx={{ display: "flex", alignItems: "center", padding: "95px 0px" }}
         >
           <Grid item xs={12} md={6} xl={6} sx={{}}>
@@ -51,7 +51,7 @@ export default function Banner() {
                   fontFamily: "Poppins",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  fontSize: "61px",
+                  fontSize: { xs: "30px", md: "30px", xl: "61px" },
                   lineHeight: "71px",
                   textTransform: "capitalize",
                   color: "#F4F4F4",
@@ -66,7 +66,7 @@ export default function Banner() {
                     fontFamily: "Poppins",
                     fontStyle: "normal",
                     fontWeight: "700",
-                    fontSize: "61px",
+                    fontSize: { xs: "30px", md: "30px", xl: "61px" },
                     lineHeight: "71px",
                     textTransform: "capitalize",
                     color: "#FEBC14",
@@ -82,7 +82,7 @@ export default function Banner() {
                     fontFamily: "Poppins",
                     fontStyle: "normal",
                     fontWeight: "700",
-                    fontSize: "61px",
+                    fontSize: { xs: "30px", md: "30px", xl: "61px" },
                     lineHeight: "71px",
                     textTransform: "capitalize",
                     color: "#FEBC14",
@@ -117,7 +117,7 @@ export default function Banner() {
                     border: "2px solid #8752A1",
                     position: "absolute",
                     borderRadius: "10px",
-                    margin:'-6px'
+                    margin: "-6px",
                   }}
                 ></Box>
                 <BannerButton>Lets Talk</BannerButton>

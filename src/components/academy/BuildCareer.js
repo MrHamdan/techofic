@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function BuildCareer() {
   return (
-    <Box sx={{ backgroundColor: "#1d1d1d" }}>
+    <Box sx={{ backgroundColor: "#1d1d1d", padding:'84px 0px' }}>
       <Container maxWidth="xl">
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
@@ -31,6 +31,7 @@ export default function BuildCareer() {
                     fontSize: "48px",
                     lineHeight: "72px",
                     color: "#F4F4F4",
+                    marginBottom:'48px',
                   }}
                 >
                   Build Your Career Wth Techofic
