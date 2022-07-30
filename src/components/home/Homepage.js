@@ -11,7 +11,7 @@ import WhyChoose from './WhyChoose';
 const Homepage = () => {
     return (
         <div>
-            <Navbar/>
+            <Navbar color='#1d1d1d'/>
             <Banner/>
             <Service/>
             <OurServices/>

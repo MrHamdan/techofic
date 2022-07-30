@@ -52,11 +52,7 @@ const ContactUsButton = styled(Button)({
   },
 });
 
-const CustomAppbar = styled(AppBar)({
-  backgroundColor: "#1d1d1d",
-});
-
-const Navbar = () => {
+const Navbar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -76,7 +72,11 @@ const Navbar = () => {
   };
 
   return (
-    <CustomAppbar position="static" elevation={0}>
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{ backgroundColor: props.color }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Image
@@ -210,7 +210,7 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </Container>
-    </CustomAppbar>
+    </AppBar>
   );
 };
 export default Navbar;
