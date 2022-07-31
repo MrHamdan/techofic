@@ -71,13 +71,50 @@ const Navbar = (props) => {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        
+          <ListItem  disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText>
+                <Link href="/academy">Academy</Link>
+              </ListItemText>
             </ListItemButton>
           </ListItem>
-        ))}
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>
+                <Link href="/academy">About Us</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>
+                <Link href="/academy">Services</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>
+                <Link href="/academy">Products</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>
+                <Link href="/academy">Blogs</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText>
+                <Link href="/academy">Pages</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        
       </List>
     </Box>
   );
