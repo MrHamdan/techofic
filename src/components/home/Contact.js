@@ -60,15 +60,17 @@ export default function Contact() {
           >
             <Grid item xs={12} md={12} xl={12}>
               <Item>
-                <Typography sx={{
-                  fontFamily: "Poppins",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  fontSize: "48px",
-                  lineHeight: "72px",
-                  color: "#F4F4F4",
-                  marginBottom:'48px',
-                }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins",
+                    fontStyle: "normal",
+                    fontWeight: "700",
+                    fontSize: "48px",
+                    lineHeight: "72px",
+                    color: "#F4F4F4",
+                    marginBottom: "48px",
+                  }}
+                >
                   Contact Now
                 </Typography>
               </Item>
@@ -83,15 +85,17 @@ export default function Contact() {
                   padding: "40px",
                 }}
               >
-                <Typography sx={{
-                  fontFamily: "Poppins",
-                  fontStyle: "normal",
-                  fontWeight: "600",
-                  fontSize: "25px",
-                  lineHeight: "38px",
-                  color: "#F4F4F4",
-                  marginBottom: "16px",
-                }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Poppins",
+                    fontStyle: "normal",
+                    fontWeight: "600",
+                    fontSize: "25px",
+                    lineHeight: "38px",
+                    color: "#F4F4F4",
+                    marginBottom: "16px",
+                  }}
+                >
                   Get in touch
                 </Typography>
                 <Box>
@@ -155,19 +159,19 @@ export default function Contact() {
                         value="Web Development"
                         className={Styles.contact_form_option}
                       >
-                        Web Development 1
+                        Web Development
                       </option>
                       <option
-                        value="Web Development"
+                        value="App Development"
                         className={Styles.contact_form_option}
                       >
-                        Web Development 2
+                        App Development
                       </option>
                       <option
-                        value="other"
+                        value="UI/UX Design"
                         className={Styles.contact_form_option}
                       >
-                        Web Development 3
+                        UI/UX Design
                       </option>
                     </select>{" "}
                     <br />
@@ -189,16 +193,20 @@ export default function Contact() {
                       className={Styles.contact_form_description}
                     />{" "}
                     <br />
-                    <Typography sx={{marginBottom:'26px'}}>
-                      <Checkbox {...register("terms")}  required sx={{
-                        color:'#727272',
-                        '&:hover': {
-                          color:'#febc14',
-                        },
-                        '&.Mui-checked': {
-                          color:'#FEBC14',
-                        }
-                      }}/>
+                    <Typography sx={{ marginBottom: "26px" }}>
+                      <Checkbox
+                        {...register("terms")}
+                        required
+                        sx={{
+                          color: "#727272",
+                          "&:hover": {
+                            color: "#febc14",
+                          },
+                          "&.Mui-checked": {
+                            color: "#FEBC14",
+                          },
+                        }}
+                      />
                       <Typography
                         component="span"
                         sx={{
@@ -241,7 +249,7 @@ export default function Contact() {
                           border: "2px solid #8752A1",
                           position: "absolute",
                           borderRadius: "10px",
-                          margin:'-6px',
+                          margin: "-6px",
                         }}
                       ></Box>
                       <ContactButton type="submit">Submit</ContactButton>

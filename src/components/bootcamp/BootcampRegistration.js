@@ -54,7 +54,7 @@ export default function BootcampRegistration() {
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2} sx={{ padding: "84px 0px" }}>
               <Grid item xs={12} md={12} xl={12}>
-                <Item sx={{marginBottom:'20px'}}>
+                <Item sx={{ marginBottom: "20px" }}>
                   <Typography
                     sx={{
                       fontFamily: "Poppins",
@@ -92,7 +92,11 @@ export default function BootcampRegistration() {
                   }}
                 >
                   <Box sx={{ flexGrow: 1 }}>
-                    <Grid container spacing={2} sx={{padding:{xs:'0px', md:'0px', xl:'40px'}}}>
+                    <Grid
+                      container
+                      spacing={2}
+                      sx={{ padding: { xs: "0px", md: "0px", xl: "40px" } }}
+                    >
                       <Grid item xs={12}>
                         <Item>
                           <Typography
@@ -194,19 +198,19 @@ export default function BootcampRegistration() {
                                 value="Web Development"
                                 className={Styles.contact_form_option}
                               >
-                                Web Development 1
+                                Web Development
                               </option>
                               <option
-                                value="Web Development"
+                                value="App Development"
                                 className={Styles.contact_form_option}
                               >
-                                Web Development 2
+                                App Development
                               </option>
                               <option
-                                value="other"
+                                value="UI/UX Design"
                                 className={Styles.contact_form_option}
                               >
-                                Web Development 3
+                                UI/UX Design
                               </option>
                             </select>{" "}
                             <br />
