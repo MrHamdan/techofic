@@ -66,55 +66,67 @@ const Navbar = (props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+      <Typography
+        variant="h6"
+        sx={{ my: 2, display: "flex", justifyContent: "center" }}
+      >
+        <Image
+          src="/assets/images/techoficlogo.svg"
+          alt="Techofic logo"
+          width={32.64}
+          height={39.19}
+        />
+        <Image
+          src="/assets/images/techoficlogotext.svg"
+          alt="Techofic logo"
+          width={144.14}
+          height={19.92}
+        />
       </Typography>
-      <Divider />
+      <Divider sx={{backgroundColor:'#A7A7A7'}}/>
       <List>
-        
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link href="/academy">Academy</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link href="/academy">About Us</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link href="/academy">Services</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link href="/academy">Products</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link href="/academy">Blogs</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link href="/academy">Pages</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-        
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText sx={{ color: "#F4F4F4" }}>
+              <Link href="/academy">Academy</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText sx={{ color: "#F4F4F4" }}>
+              <Link href="/">About Us</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText sx={{ color: "#F4F4F4" }}>
+              <Link href="/">Services</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText sx={{ color: "#F4F4F4" }}>
+              <Link href="/">Products</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText sx={{ color: "#F4F4F4" }}>
+              <Link href="/">Blogs</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText sx={{ color: "#F4F4F4" }}>
+              <Link href="/">Pages</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
@@ -144,7 +156,7 @@ const Navbar = (props) => {
       <AppBar
         position="static"
         elevation={0}
-        sx={{ backgroundColor: props.color, paddingBottom:'20px' }}
+        sx={{ backgroundColor: props.color, padding:'20px' }}
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -251,6 +263,7 @@ const Navbar = (props) => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              backgroundColor: "#323232",
             },
           }}
         >
