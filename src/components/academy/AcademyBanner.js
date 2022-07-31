@@ -46,7 +46,7 @@ export default function AcademyBanner() {
           backgroundPosition: "center",
           backgroundColor: "#727272",
           backgroundRepeat: "no-repeat",
-          paddingTop: "185px",
+          paddingTop: {xs:'30px', md:'30px', xl:'185px'},
         }}
       >
         <Container maxWidth="xxl">
@@ -69,7 +69,7 @@ export default function AcademyBanner() {
                       fontFamily: "Poppins",
                       fontStyle: "normal",
                       fontWeight: "700",
-                      fontSize: { xs: "30px", md: "30px", xl: "61px" },
+                      fontSize: { xs: "20px", md: "30px", xl: "61px" },
                       lineHeight: "92px",
                       color: "#F4F4F4",
                       marginBottom: "8px",

@@ -25,7 +25,7 @@ export default function OurCourses() {
     <Box sx={{ backgroundColor: "#1d1d1d" }}>
       <Container maxWidth="lg">
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2} sx={{padding:'84px 0px'}}>
+          <Grid container spacing={2} sx={{ padding: "84px 0px" }}>
             <Grid item xs={12} md={12} xl={12}>
               <Item>
                 <Typography
@@ -33,7 +33,7 @@ export default function OurCourses() {
                     fontFamily: "Poppins",
                     fontStyle: "normal",
                     fontWeight: "700",
-                    fontSize: "48px",
+                    fontSize: { xs: "35px", md: "30px", xl: "48px" },
                     lineHeight: "72px",
                     color: "#F4F4F4",
                     marginBottom: "48px",
@@ -157,6 +157,7 @@ export default function OurCourses() {
                     border: "1px solid #8752A1",
                     borderRadius: "10px",
                   }}
+                  className={Styles.ourcourse_card}
                 >
                   <Box sx={{ marginBottom: "16px" }}>
                     <Image
@@ -241,6 +242,7 @@ export default function OurCourses() {
                         lineHeight: "35px",
                         color: "#FEBC14",
                       }}
+                      className={Styles.ourcourse_link}
                     >
                       <Link href="/">View Details</Link>
                     </Typography>
@@ -258,6 +260,7 @@ export default function OurCourses() {
                     border: "1px solid #8752A1",
                     borderRadius: "10px",
                   }}
+                  className={Styles.ourcourse_card}
                 >
                   <Box sx={{ marginBottom: "16px" }}>
                     <Image
@@ -341,6 +344,7 @@ export default function OurCourses() {
                         lineHeight: "35px",
                         color: "#FEBC14",
                       }}
+                      className={Styles.ourcourse_link}
                     >
                       <Link href="/">View Details</Link>
                     </Typography>
@@ -358,6 +362,7 @@ export default function OurCourses() {
                     border: "1px solid #8752A1",
                     borderRadius: "10px",
                   }}
+                  className={Styles.ourcourse_card}
                 >
                   <Box sx={{ marginBottom: "16px" }}>
                     <Image
@@ -441,6 +446,7 @@ export default function OurCourses() {
                         lineHeight: "35px",
                         color: "#FEBC14",
                       }}
+                      className={Styles.ourcourse_link}
                     >
                       <Link href="/">View Details</Link>
                     </Typography>
@@ -458,6 +464,7 @@ export default function OurCourses() {
                     border: "1px solid #8752A1",
                     borderRadius: "10px",
                   }}
+                  className={Styles.ourcourse_card}
                 >
                   <Box sx={{ marginBottom: "16px" }}>
                     <Image
@@ -541,6 +548,7 @@ export default function OurCourses() {
                         lineHeight: "35px",
                         color: "#FEBC14",
                       }}
+                      className={Styles.ourcourse_link}
                     >
                       <Link href="/">View Details</Link>
                     </Typography>
@@ -558,6 +566,7 @@ export default function OurCourses() {
                     border: "1px solid #8752A1",
                     borderRadius: "10px",
                   }}
+                  className={Styles.ourcourse_card}
                 >
                   <Box sx={{ marginBottom: "16px" }}>
                     <Image
@@ -641,6 +650,7 @@ export default function OurCourses() {
                         lineHeight: "35px",
                         color: "#FEBC14",
                       }}
+                      className={Styles.ourcourse_link}
                     >
                       <Link href="/">View Details</Link>
                     </Typography>
@@ -658,6 +668,7 @@ export default function OurCourses() {
                     border: "1px solid #8752A1",
                     borderRadius: "10px",
                   }}
+                  className={Styles.ourcourse_card}
                 >
                   <Box sx={{ marginBottom: "16px" }}>
                     <Image
@@ -741,6 +752,7 @@ export default function OurCourses() {
                         lineHeight: "35px",
                         color: "#FEBC14",
                       }}
+                      className={Styles.ourcourse_link}
                     >
                       <Link href="/">View Details</Link>
                     </Typography>
@@ -758,6 +770,7 @@ export default function OurCourses() {
                     border: "1px solid #8752A1",
                     borderRadius: "10px",
                   }}
+                  className={Styles.ourcourse_card}
                 >
                   <Box sx={{ marginBottom: "16px" }}>
                     <Image
@@ -856,6 +869,7 @@ export default function OurCourses() {
                         lineHeight: "35px",
                         color: "#FEBC14",
                       }}
+                      className={Styles.ourcourse_link}
                     >
                       <Link href="/">View Details</Link>
                     </Typography>
@@ -866,7 +880,7 @@ export default function OurCourses() {
           </Grid>
         </Box>
       </Container>
-      <Footer/>
+      <Footer />
     </Box>
   );
 }
