@@ -105,9 +105,10 @@ export default function Banner() {
                   marginBottom: "48px",
                 }}
               >
-                Techofic is one of the leading software development companies,
-                helping clients transform their existing businesses in light of
-                the swiftly evolving nature of digital innovation.
+                TECHOFIC is one of the leading Software Development companies,
+                helping clients transform their existing businesses, operational
+                and technological frameworks in light of the swiftly evolving
+                nature of digital innovation.
               </Typography>
               <Box sx={{ textAlign: "left", position: "relative" }}>
                 <Box

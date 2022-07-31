@@ -122,11 +122,12 @@ export default function WhyChoose() {
                                     opacity: "0.6",
                                   }}
                                 >
-                                  Our Senior Engineers have the expertise your
-                                  projects need. Our 100% bilingual talented
-                                  professionals have the practical experience to
-                                  face every challenge and are certified in
-                                  every technology and methodology.
+                                  Our Senior Engineers have the knowledge and
+                                  experience that your projects require. Our
+                                  bilingual talented professionals have the
+                                  practical experience to meet any challenge and
+                                  are certified in all technologies and
+                                  methodologies.
                                 </Typography>
                               </Item>
                             </Grid>
@@ -200,10 +201,12 @@ export default function WhyChoose() {
                                     opacity: "0.6",
                                   }}
                                 >
-                                  Our team evaluates over 400 applicants every
-                                  year to find the most talented Software
-                                  Engineers and we provide them continuous and
-                                  extensive training.
+                                  We thrive on identifying the top 1% of IT
+                                  talent to meet the demands of each project.
+                                  Every year, our team evaluates over 400
+                                  applicants to find the most talented Software
+                                  Engineers, and we provide them with ongoing
+                                  and extensive training.
                                 </Typography>
                               </Item>
                             </Grid>
@@ -287,10 +290,12 @@ export default function WhyChoose() {
                                     opacity: "0.6",
                                   }}
                                 >
-                                  Living and working in the same time zone
-                                  allows for seamless integration. This makes
-                                  everyday work, meetings, and collaboration
-                                  easier.
+                                  Living and working in the same time zone makes
+                                  it less likely that things will get in the way
+                                  and makes it easier to integrate new
+                                  processes. This makes it easier to do work,
+                                  get together with other people, and have
+                                  meetings.
                                 </Typography>
                               </Item>
                             </Grid>
@@ -362,10 +367,11 @@ export default function WhyChoose() {
                                     opacity: "0.6",
                                   }}
                                 >
-                                  We start with a deep analysis and go forward
-                                  understanding your needs, Then we divide our
-                                  work into parts to different employees at
-                                  different sectors.
+                                  After doing an in-depth analysis and getting a
+                                  better knowledge of your requirements, we
+                                  break down our work into several distinct
+                                  components and assign each of those parts to a
+                                  different member of our team.
                                 </Typography>
                               </Item>
                             </Grid>

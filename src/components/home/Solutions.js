@@ -30,9 +30,13 @@ export default function Solutions() {
     >
       <Box sx={{ flexGrow: 1 }}>
         <Container maxWidth="xl">
-          <Grid container spacing={2} sx={{
-            padding:'200px 0px'
-          }}>
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              padding: "200px 0px",
+            }}
+          >
             <Grid item xs={12} md={6} xl={6}>
               <Item>
                 <Image
@@ -98,10 +102,16 @@ export default function Solutions() {
                         opacity: "0.6",
                       }}
                     >
-                      We are a growing startup software agency where we strive
-                      to provide the best service worldwide. We had a remote
-                      team working from different parts of the world. Our team
-                      is dedicated in working and learning further to grow.
+                      We base our Software Development base on Standalone
+                      Applications, Websites & Web Apps, Mobile Apps, and
+                      Embedded Software. Apps that can run on a PC without an
+                      internet connection are called standalone apps. Web
+                      browser-based applications and websites fall under this
+                      category. The vast majority of the material is produced on
+                      the server, delivered to the client, and then displayed.
+                      Run on mobile devices, mobile apps are a combination of
+                      standalone and web programs. Small devices typically have
+                      embedded software that serves a specific purpose.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -143,10 +153,12 @@ export default function Solutions() {
                         opacity: "0.6",
                       }}
                     >
-                      We are a growing startup software agency where we strive
-                      to provide the best service worldwide. We had a remote
-                      team working from different parts of the world. Our team
-                      is dedicated in working and learning further to grow.
+                      Exceed the clients expectations by providing the most
+                      outstanding web solutions that go beyond software to
+                      translate data into knowledge, enabling the client to
+                      address the issues they are facing. We strive for
+                      innovation not only in our development venture, but in
+                      every element of our company as well.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -188,10 +200,17 @@ export default function Solutions() {
                         opacity: "0.6",
                       }}
                     >
-                      We are a growing startup software agency where we strive
-                      to provide the best service worldwide. We had a remote
-                      team working from different parts of the world. Our team
-                      is dedicated in working and learning further to grow.
+                      Our goal is to strengthen our position in the market and
+                      become an industry leader in web solution provision within
+                      the information technology sector. Because we are aware
+                      that the expansion of our customers businesses directly
+                      correlates to our expansion, we promise to each of our
+                      clients that we will assist them in reaching their
+                      professional objectives. We believe that work should be
+                      done to the highest possible standard of accuracy. Within
+                      the information technology sector, one of our primary
+                      goals is to earn a reputation for being a dependable,
+                      inventive, and user-friendly software service provider.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>

@@ -310,7 +310,7 @@ export default function OurServices() {
                       className={Styles.ourservices_card_para}
                     >
                       Help you translate your existing design or concept and
-                      work with you to develop the ideal design.
+                      work with you to develop the ideal design
                     </Typography>
                     <Typography
                       sx={{

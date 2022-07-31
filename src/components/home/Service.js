@@ -56,8 +56,8 @@ export default function Service() {
                   marginTop: "16px",
                 }}
               >
-                Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
-                ultrices.
+                Rich individuality from the line on paper to final production,
+                from first concepts to the endmost.
               </Typography>
             </Item>
           </Grid>
@@ -96,8 +96,8 @@ export default function Service() {
                   marginTop: "16px",
                 }}
               >
-                Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
-                ultrices.
+                Give our customers a better, more user-friendly experience to
+                make digital products work better.
               </Typography>
             </Item>
           </Grid>
@@ -136,8 +136,8 @@ export default function Service() {
                   marginTop: "16px",
                 }}
               >
-                Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
-                ultrices.
+                If you already have a design or
+                concept in mind, we can assist you in making it a unique reality.
               </Typography>
             </Item>
           </Grid>
@@ -176,8 +176,8 @@ export default function Service() {
                   marginTop: "16px",
                 }}
               >
-                Lorem ipsum dolor sit amet, consecte adipiscing elit quis in
-                ultrices.
+                We are the bridges between the brand and its customers since we
+                have a deep understanding.
               </Typography>
             </Item>
           </Grid>
