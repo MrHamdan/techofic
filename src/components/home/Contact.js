@@ -8,6 +8,7 @@ import Styles from "../../styles/Contact.module.css";
 import { useForm } from "react-hook-form";
 import CircleIcon from "@mui/icons-material/Circle";
 import Image from "next/image";
+import Swal from "sweetalert2";
 
 
 
@@ -46,9 +47,18 @@ export default function Contact() {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    Swal.fire({
+      position: "middle",
+      icon: "success",
+      title: "Registration Successfull",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    console.log(data);
+  }
 
-  console.log(watch("example"));
+  // console.log(watch("example"));
   return (
     <Box sx={{ backgroundColor: "#1d1d1d", padding: "74px 0px" }}>
       <Box sx={{ flexGrow: 1 }}>

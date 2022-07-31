@@ -8,6 +8,7 @@ import Navbar from "../shared/Navbar";
 import Footer from "../shared/Footer";
 import { useForm } from "react-hook-form";
 import Styles from "../../styles/BootcampRegistration.module.css";
+import Swal from "sweetalert2";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -43,9 +44,18 @@ export default function BootcampRegistration() {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    Swal.fire({
+      position: "middle",
+      icon: "success",
+      title: "Registration Successfull",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    console.log(data);
+  };
 
-  console.log(watch("example"));
+  // console.log(watch("example"));
   return (
     <Box>
       <Navbar color="#323232" />
