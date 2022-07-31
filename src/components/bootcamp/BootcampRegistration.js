@@ -48,7 +48,7 @@ export default function BootcampRegistration() {
   console.log(watch("example"));
   return (
     <Box>
-      <Navbar color="#1d1d1d" />
+      <Navbar color="#323232" />
       <Box sx={{ backgroundColor: "#1d1d1d" }}>
         <Container maxWidth="md">
           <Box sx={{ flexGrow: 1 }}>
