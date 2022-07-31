@@ -54,7 +54,7 @@ export default function BootcampRegistration() {
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2} sx={{ padding: "84px 0px" }}>
               <Grid item xs={12} md={12} xl={12}>
-                <Item>
+                <Item sx={{marginBottom:'20px'}}>
                   <Typography
                     sx={{
                       fontFamily: "Poppins",
