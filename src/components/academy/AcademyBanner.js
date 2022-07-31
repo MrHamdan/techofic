@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import { Button, Container, Typography } from "@mui/material";
 import Navbar from "../../components/shared/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
@@ -68,7 +69,7 @@ export default function AcademyBanner() {
                       fontFamily: "Poppins",
                       fontStyle: "normal",
                       fontWeight: "700",
-                      fontSize: {xs:'30px', md:"30px", xl:'61px'},
+                      fontSize: { xs: "30px", md: "30px", xl: "61px" },
                       lineHeight: "92px",
                       color: "#F4F4F4",
                       marginBottom: "8px",
@@ -121,7 +122,11 @@ export default function AcademyBanner() {
                         marginTop: "-6px",
                       }}
                     ></Box>
-                    <AcademyGetRegistered>Get Registered</AcademyGetRegistered>
+                    <Link href='/bootcamp'>
+                      <AcademyGetRegistered>
+                        Get Registered
+                      </AcademyGetRegistered>
+                    </Link>
                   </Box>
                   <Typography
                     sx={{

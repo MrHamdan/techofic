@@ -144,7 +144,7 @@ const Navbar = (props) => {
       <AppBar
         position="static"
         elevation={0}
-        sx={{ backgroundColor: props.color }}
+        sx={{ backgroundColor: props.color, paddingBottom:'20px' }}
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>

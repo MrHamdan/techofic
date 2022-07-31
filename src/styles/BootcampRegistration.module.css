@@ -1,0 +1,191 @@
+.contact_form_heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+
+.contact_form_name{
+    margin-bottom: 16px;
+}
+
+.contact_form_email{
+    margin-bottom: 16px;
+}
+
+.contact_form_interested{
+    margin-bottom: 16px;
+}
+
+.contact_form_terms{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #E0E0E0;
+
+}
+
+.contact_form_terms_colored{
+    
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+}
+
+.contact_form_button{
+    width: 162px;
+height: 54px;
+background: #FEBC14;
+border-radius: 10px;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 35px;
+/* identical to box height, or 219% */
+
+text-align: center;
+
+color: #323232;
+text-transform: none;
+}
+
+.contact_form_button:hover{
+    background: #FEBC14;
+}
+
+.contact_form_name{
+    display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #727272;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+}
+
+.contact_form_name:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_email:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_interest:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_name:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_description:hover{
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_email:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_interest:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_description:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+
+.contact_form_email{
+    display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #727272;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+}
+
+.contact_form_phone{
+    display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  border: 1px solid #727272;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+}
+
+.contact_form_interest{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #727272;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+}
+
+.contact_form_option{
+  color:black;
+}
+
+.contact_form_description{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #727272;
+  height: 54px;
+border-radius: 15px;
+background-color: transparent;
+color:white;
+resize: none;
+height: 120px;
+overflow: hidden;
+}
