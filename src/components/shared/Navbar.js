@@ -30,7 +30,7 @@ const CustomLinkButton = styled(Button)({
   fontWeight: "500",
   fontSize: "18px",
   lineHeight: "26px",
-  color: "white",
+  color: "#9E9E9E",
   textTransform: "none",
   "&:hover": {
     color: "#febc14",
@@ -49,7 +49,7 @@ const ContactUsButton = styled(Button)({
   textTransform: "none",
   border: "1px solid #febc14",
   backgroundColor: "transparent",
-  color: "white",
+  color: "#FEBC14",
   "&:hover": {
     backgroundColor: "#febc14",
     color: "#1d1d1d",
@@ -83,46 +83,88 @@ const Navbar = (props) => {
           height={19.92}
         />
       </Typography>
-      <Divider sx={{backgroundColor:'#A7A7A7'}}/>
+      <Divider sx={{ backgroundColor: "#A7A7A7" }} />
       <List>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText sx={{ color: "#F4F4F4" }}>
+            <ListItemText
+              sx={{
+                color: "#9E9E9E",
+                "&:hover": {
+                  color: "#febc14",
+                },
+              }}
+            >
               <Link href="/academy">Academy</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText sx={{ color: "#F4F4F4" }}>
+            <ListItemText
+              sx={{
+                color: "#9E9E9E",
+                "&:hover": {
+                  color: "#febc14",
+                },
+              }}
+            >
               <Link href="/">About Us</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText sx={{ color: "#F4F4F4" }}>
+            <ListItemText
+              sx={{
+                color: "#9E9E9E",
+                "&:hover": {
+                  color: "#febc14",
+                },
+              }}
+            >
               <Link href="/">Services</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText sx={{ color: "#F4F4F4" }}>
+            <ListItemText
+              sx={{
+                color: "#9E9E9E",
+                "&:hover": {
+                  color: "#febc14",
+                },
+              }}
+            >
               <Link href="/">Products</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText sx={{ color: "#F4F4F4" }}>
+            <ListItemText
+              sx={{
+                color: "#9E9E9E",
+                "&:hover": {
+                  color: "#febc14",
+                },
+              }}
+            >
               <Link href="/">Blogs</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText sx={{ color: "#F4F4F4" }}>
+            <ListItemText
+              sx={{
+                color: "#9E9E9E",
+                "&:hover": {
+                  color: "#febc14",
+                },
+              }}
+            >
               <Link href="/">Pages</Link>
             </ListItemText>
           </ListItemButton>
@@ -196,37 +238,37 @@ const Navbar = (props) => {
             >
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2,  display: "block" }}
               >
                 <Link href="/academy">Academy</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2,  display: "block" }}
               >
                 <Link href="/">About Us</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2,  display: "block" }}
               >
                 <Link href="/">Services</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2,  display: "block" }}
               >
                 <Link href="/">Products</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2,  display: "block" }}
               >
                 <Link href="/">Blogs</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2,  display: "block" }}
               >
                 <Link href="/">Pages</Link>
               </CustomLinkButton>

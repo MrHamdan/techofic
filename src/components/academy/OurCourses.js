@@ -241,6 +241,7 @@ export default function OurCourses() {
                         fontSize: "16px",
                         lineHeight: "35px",
                         color: "#F4F4F4",
+                        opacity: "0.6",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -280,6 +281,7 @@ export default function OurCourses() {
                         lineHeight: "38px",
                         color: "#F4F4F4",
                         marginBottom: "16px",
+                        textAlign: "left",
                       }}
                     >
                       UI/UX Design(Basic)
@@ -343,6 +345,7 @@ export default function OurCourses() {
                         fontSize: "16px",
                         lineHeight: "35px",
                         color: "#F4F4F4",
+                        opacity: "0.6",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -382,6 +385,7 @@ export default function OurCourses() {
                         lineHeight: "38px",
                         color: "#F4F4F4",
                         marginBottom: "16px",
+                        textAlign: "left",
                       }}
                     >
                       Graphics Design
@@ -445,6 +449,7 @@ export default function OurCourses() {
                         fontSize: "16px",
                         lineHeight: "35px",
                         color: "#F4F4F4",
+                        opacity: "0.6",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -484,6 +489,7 @@ export default function OurCourses() {
                         lineHeight: "38px",
                         color: "#F4F4F4",
                         marginBottom: "16px",
+                        textAlign: "left",
                       }}
                     >
                       Programming Language
@@ -547,6 +553,7 @@ export default function OurCourses() {
                         fontSize: "16px",
                         lineHeight: "35px",
                         color: "#F4F4F4",
+                        opacity: "0.6",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -586,6 +593,7 @@ export default function OurCourses() {
                         lineHeight: "38px",
                         color: "#F4F4F4",
                         marginBottom: "16px",
+                        textAlign: "left",
                       }}
                     >
                       Markup Language
@@ -649,6 +657,7 @@ export default function OurCourses() {
                         fontSize: "16px",
                         lineHeight: "35px",
                         color: "#F4F4F4",
+                        opacity: "0.6",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -688,6 +697,7 @@ export default function OurCourses() {
                         lineHeight: "38px",
                         color: "#F4F4F4",
                         marginBottom: "16px",
+                        textAlign: "left",
                       }}
                     >
                       Web Development (Advanced)
@@ -751,6 +761,7 @@ export default function OurCourses() {
                         fontSize: "16px",
                         lineHeight: "35px",
                         color: "#F4F4F4",
+                        opacity: "0.6",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -790,6 +801,7 @@ export default function OurCourses() {
                         lineHeight: "38px",
                         color: "#F4F4F4",
                         marginBottom: "16px",
+                        textAlign: "left",
                       }}
                     >
                       UI/UX Design(Advanced)
@@ -868,6 +880,7 @@ export default function OurCourses() {
                         fontSize: "16px",
                         lineHeight: "35px",
                         color: "#F4F4F4",
+                        opacity: "0.6",
                       }}
                       className={Styles.ourcourse_link}
                     >
