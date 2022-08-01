@@ -198,22 +198,30 @@ const Navbar = (props) => {
       <AppBar
         position="static"
         elevation={0}
-        sx={{ backgroundColor: props.color, paddingBottom:'20px' }}
+        sx={{ backgroundColor: props.color, paddingBottom: "20px" }}
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <Image
-              src="/assets/images/techoficlogo.svg"
-              alt="Techofic logo"
-              width={32.64}
-              height={39.19}
-            />
-            <Image
-              src="/assets/images/techoficlogotext.svg"
-              alt="Techofic logo"
-              width={144.14}
-              height={19.92}
-            />
+            <Link href="/">
+              <Box sx={{ cursor: "pointer" }}>
+                <Image
+                  src="/assets/images/techoficlogo.svg"
+                  alt="Techofic logo"
+                  width={32.64}
+                  height={39.19}
+                />
+              </Box>
+            </Link>
+            <Link href="/">
+              <Box sx={{ cursor: "pointer" }}>
+                <Image
+                  src="/assets/images/techoficlogotext.svg"
+                  alt="Techofic logo"
+                  width={144.14}
+                  height={19.92}
+                />
+              </Box>
+            </Link>
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -223,10 +231,10 @@ const Navbar = (props) => {
                 mr: 0,
                 flexGrow: 1,
                 display: { xs: "flex", md: "none", xl: "none", lg: "none" },
-                justifyContent:'right'
+                justifyContent: "right",
               }}
             >
-              <MenuIcon sx={{color:'#FEBC14'}}/>
+              <MenuIcon sx={{ color: "#FEBC14" }} />
             </IconButton>
 
             <Box
@@ -238,37 +246,37 @@ const Navbar = (props) => {
             >
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,  display: "block" }}
+                sx={{ my: 2, display: "block" }}
               >
                 <Link href="/academy">Academy</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,  display: "block" }}
+                sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">About Us</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,  display: "block" }}
+                sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Services</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,  display: "block" }}
+                sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Products</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,  display: "block" }}
+                sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Blogs</Link>
               </CustomLinkButton>
               <CustomLinkButton
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2,  display: "block" }}
+                sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Pages</Link>
               </CustomLinkButton>

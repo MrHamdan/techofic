@@ -95,6 +95,10 @@ color:white;
     border: 1px solid #FEBC14;
 }
 
+.contact_form_phone:hover{
+    border: 1px solid #FEBC14;
+}
+
 .contact_form_interest:hover{
     border: 1px solid #FEBC14;
 }
@@ -109,6 +113,11 @@ color:white;
 }
 
 .contact_form_email:focus{
+    outline: none;
+    border: 1px solid #FEBC14;
+}
+
+.contact_form_phone:focus{
     outline: none;
     border: 1px solid #FEBC14;
 }
