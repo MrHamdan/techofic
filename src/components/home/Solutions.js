@@ -26,6 +26,9 @@ export default function Solutions() {
         background: 'url("/assets/images/solutionsbackground.svg")',
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        display: "flex",
+        alignItems: "center",
       }}
     >
       <Box sx={{ flexGrow: 1 }}>
@@ -34,7 +37,7 @@ export default function Solutions() {
             container
             spacing={2}
             sx={{
-              padding: "200px 0px",
+              padding: "190px 0px",
             }}
           >
             <Grid item xs={12} md={6} xl={6}>
@@ -56,7 +59,7 @@ export default function Solutions() {
                     fontFamily: "Poppins",
                     fontStyle: "normal",
                     fontWeight: "700",
-                    fontSize: "48px",
+                    fontSize: { xs: "30px", md: "30px", xl: "48px" },
                     lineHeight: "58px",
                     color: "#F4F4F4",
                     marginBottom: "34px",

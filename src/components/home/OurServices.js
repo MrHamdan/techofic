@@ -29,7 +29,7 @@ export default function OurServices() {
     >
       <Box sx={{ flexGrow: 1 }}>
         <Container maxWidth="xl">
-          <Grid container spacing={0} className={Styles.ourservices_grid}>
+          <Grid container spacing={0} sx={{ padding: "50px 0px" }}>
             <Grid item xs={12} md={12} xl={12}>
               <Item>
                 <Typography
@@ -37,7 +37,7 @@ export default function OurServices() {
                     fontFamily: "Poppins",
                     fontStyle: "normal",
                     fontWeight: "700",
-                    fontSize: "48px",
+                    fontSize: { xs: "30px", md: "30px", xl: "48px" },
                     lineHeight: "72px",
                     color: "#F4F4F4",
                   }}
@@ -57,7 +57,7 @@ export default function OurServices() {
                     lineHeight: "35px",
                     color: "#F4F4F4",
                     opacity: "0.6",
-                    marginBottom: "40px",
+                    marginBottom: "0px",
                   }}
                 >
                   From beginning ideas to individual integrity from the line on
@@ -65,7 +65,7 @@ export default function OurServices() {
                 </Typography>
               </Item>
             </Grid>
-            <Box sx={{ flexGrow: 1, marginTop: "100px" }}>
+            <Box sx={{ flexGrow: 1, marginTop: "50px" }}>
               <Grid container spacing={2}>
                 <Grid item xs={12} md={6} xl={3}>
                   <Item

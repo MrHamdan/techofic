@@ -53,7 +53,7 @@ export default function WhyChoose() {
                   fontFamily: "Poppins",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  fontSize: "48px",
+                  fontSize: { xs: "30px", md: "30px", xl: "48px" },
                   lineHeight: "72px",
                   color: "#F4F4F4",
                   marginBottom: "48px",

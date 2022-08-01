@@ -47,7 +47,7 @@ export default function Footer() {
     <Box
       sx={{
         backgroundColor: "#323232",
-        padding: "84px 0px",
+        padding: "40px 0px",
       }}
     >
       <Container maxWidth="xl">

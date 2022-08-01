@@ -240,7 +240,7 @@ export default function OurCourses() {
                         fontWeight: "700",
                         fontSize: "16px",
                         lineHeight: "35px",
-                        color: "#FEBC14",
+                        color: "#F4F4F4",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -342,7 +342,7 @@ export default function OurCourses() {
                         fontWeight: "700",
                         fontSize: "16px",
                         lineHeight: "35px",
-                        color: "#FEBC14",
+                        color: "#F4F4F4",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -444,7 +444,7 @@ export default function OurCourses() {
                         fontWeight: "700",
                         fontSize: "16px",
                         lineHeight: "35px",
-                        color: "#FEBC14",
+                        color: "#F4F4F4",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -546,7 +546,7 @@ export default function OurCourses() {
                         fontWeight: "700",
                         fontSize: "16px",
                         lineHeight: "35px",
-                        color: "#FEBC14",
+                        color: "#F4F4F4",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -648,7 +648,7 @@ export default function OurCourses() {
                         fontWeight: "700",
                         fontSize: "16px",
                         lineHeight: "35px",
-                        color: "#FEBC14",
+                        color: "#F4F4F4",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -750,7 +750,7 @@ export default function OurCourses() {
                         fontWeight: "700",
                         fontSize: "16px",
                         lineHeight: "35px",
-                        color: "#FEBC14",
+                        color: "#F4F4F4",
                       }}
                       className={Styles.ourcourse_link}
                     >
@@ -867,7 +867,7 @@ export default function OurCourses() {
                         fontWeight: "700",
                         fontSize: "16px",
                         lineHeight: "35px",
-                        color: "#FEBC14",
+                        color: "#F4F4F4",
                       }}
                       className={Styles.ourcourse_link}
                     >

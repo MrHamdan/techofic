@@ -171,10 +171,15 @@ color:white;
 border-radius: 15px;
 background-color: transparent;
 color:white;
+background: url('/assets/images/1.svg') no-repeat right transparent;
+background-size: 16px;
+    -webkit-appearance: none;
+    background-position-x: 97%;
 }
 
 .contact_form_option{
-  color:black;
+  color:white;
+  background-color: #1d1d1d;
 }
 
 .contact_form_description{

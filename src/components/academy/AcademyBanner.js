@@ -30,7 +30,7 @@ const AcademyGetRegistered = styled(Button)({
   color: "#323232",
   textTransform: "none",
   "&:hover": {
-    backgroundColor: "#FEBC14",
+    backgroundColor: "#F9921A",
   },
   marginBottom: "135px",
 });

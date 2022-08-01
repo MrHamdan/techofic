@@ -70,7 +70,7 @@ export default function BootcampRegistration() {
                       fontFamily: "Poppins",
                       fontStyle: "normal",
                       fontWeight: "700",
-                      fontSize: "48px",
+                      fontSize: { xs: "25px", md: "30px", xl: "48px" },
                       lineHeight: "72px",
                       color: "#F4F4F4",
                       marginBottom: "8px",
@@ -242,7 +242,9 @@ export default function BootcampRegistration() {
                               className={Styles.contact_form_description}
                             />{" "} */}
                             <br />
-                            <Typography sx={{ marginBottom: "26px" }}>
+                            <Typography
+                              sx={{ marginBottom: "26px", marginTop: "-30px" }}
+                            >
                               <Checkbox
                                 {...register("terms")}
                                 required
