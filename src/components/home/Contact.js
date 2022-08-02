@@ -366,8 +366,12 @@ export default function Contact() {
                 </Box>
                 <Box sx={{ flexGrow: 1 }}>
                   <Grid container spacing={2}>
-                    <Grid item xs={12} md={2} xl={12}>
-                      <Item sx={{ marginLeft: "20px" }}>
+                    <Grid item xs={12} md={12} xl={12}>
+                      <Item
+                        sx={{
+                          marginLeft: { xs: "0px", md: "20px", xl: "20px" },
+                        }}
+                      >
                         <Box
                           sx={{
                             display: "flex",
@@ -379,7 +383,15 @@ export default function Contact() {
                             },
                           }}
                         >
-                          <Box sx={{ marginRight: "16px" }}>
+                          <Box
+                            sx={{
+                              marginRight: {
+                                xs: "0px",
+                                md: "16px",
+                                xl: "16px",
+                              },
+                            }}
+                          >
                             <Image
                               src="/assets/images/address.svg"
                               alt="address icon"
@@ -387,7 +399,15 @@ export default function Contact() {
                               height={50}
                             />
                           </Box>
-                          <Box sx={{ textAlign: "left" }}>
+                          <Box
+                            sx={{
+                              textAlign: {
+                                xs: "center",
+                                md: "left",
+                                xl: "left",
+                              },
+                            }}
+                          >
                             <Typography
                               sx={{
                                 fontFamily: "Poppins",
@@ -418,8 +438,12 @@ export default function Contact() {
                         </Box>
                       </Item>
                     </Grid>
-                    <Grid item xs={12} md={10} xl={12}>
-                      <Item sx={{ marginLeft: "20px" }}>
+                    <Grid item xs={12} md={12} xl={12}>
+                      <Item
+                        sx={{
+                          marginLeft: { xs: "0px", md: "20px", xl: "20px" },
+                        }}
+                      >
                         <Box
                           sx={{
                             display: "flex",
@@ -431,7 +455,15 @@ export default function Contact() {
                             },
                           }}
                         >
-                          <Box sx={{ marginRight: "16px" }}>
+                          <Box
+                            sx={{
+                              marginRight: {
+                                xs: "0px",
+                                md: "16px",
+                                xl: "16px",
+                              },
+                            }}
+                          >
                             <Image
                               src="/assets/images/phone.svg"
                               alt="address icon"
@@ -439,7 +471,15 @@ export default function Contact() {
                               height={50}
                             />
                           </Box>
-                          <Box sx={{ textAlign: "left" }}>
+                          <Box
+                            sx={{
+                              textAlign: {
+                                xs: "center",
+                                md: "left",
+                                xl: "left",
+                              },
+                            }}
+                          >
                             <Typography
                               sx={{
                                 fontFamily: "Poppins",
@@ -469,8 +509,12 @@ export default function Contact() {
                         </Box>
                       </Item>
                     </Grid>
-                    <Grid item xs={12} md={2} xl={12}>
-                      <Item sx={{ marginLeft: "20px" }}>
+                    <Grid item xs={12} md={12} xl={12}>
+                      <Item
+                        sx={{
+                          marginLeft: { xs: "0px", md: "20px", xl: "20px" },
+                        }}
+                      >
                         <Box
                           sx={{
                             display: "flex",
@@ -482,7 +526,15 @@ export default function Contact() {
                             },
                           }}
                         >
-                          <Box sx={{ marginRight: "16px" }}>
+                          <Box
+                            sx={{
+                              marginRight: {
+                                xs: "0px",
+                                md: "16px",
+                                xl: "16px",
+                              },
+                            }}
+                          >
                             <Image
                               src="/assets/images/email.svg"
                               alt="address icon"
@@ -490,7 +542,15 @@ export default function Contact() {
                               height={50}
                             />
                           </Box>
-                          <Box sx={{ textAlign: "left" }}>
+                          <Box
+                            sx={{
+                              textAlign: {
+                                xs: "center",
+                                md: "left",
+                                xl: "left",
+                              },
+                            }}
+                          >
                             <Typography
                               sx={{
                                 fontFamily: "Poppins",
