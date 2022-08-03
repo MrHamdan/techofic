@@ -3,12 +3,19 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { Container, Divider, IconButton, InputAdornment, TextField, Typography } from "@mui/material";
+import {
+  Container,
+  Divider,
+  IconButton,
+  InputAdornment,
+  TextField,
+  Typography,
+} from "@mui/material";
 import Image from "next/image";
-import InstagramIcon from '@mui/icons-material/Instagram';
+import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "next/link";
 import SendIcon from "@mui/icons-material/Send";
 
@@ -18,7 +25,7 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   textAlign: "center",
   color: theme.palette.text.secondary,
-  boxShadow:theme.shadows[0],
+  boxShadow: theme.shadows[0],
 }));
 
 const FooterSubscription = styled(TextField)({
@@ -47,7 +54,7 @@ export default function Footer() {
     <Box
       sx={{
         backgroundColor: "#323232",
-        padding: "40px 0px",
+        padding: "35px 0px",
       }}
     >
       <Container maxWidth="xl">
@@ -366,86 +373,171 @@ export default function Footer() {
                         />
                       </Item>
                     </Grid>
-                    <Grid item xs={12} md={2} xl={2}>
+                    <Grid item xs={12} md={12} xl={12}>
                       <Item>
-                        <Image
-                          src="/assets/images/address.svg"
-                          alt="address icon"
-                          width={36.11}
-                          height={36.11}
-                        />
-                      </Item>
-                    </Grid>
-                    <Grid item xs={12} md={10} xl={10}>
-                      <Item sx={{ textAlign: "left" }}>
-                        <Typography
+                        <Box
                           sx={{
-                            fontFamily: "Lato",
-                            fontStyle: "normal",
-                            fontWeight: "400",
-                            fontSize: "16px",
-                            lineHeight: "26px",
-                            color: "#F4F4F4",
-                            opacity: "0.6",
+                            display: "flex",
+                            alignItems: "center",
+                            flexDirection: {
+                              xs: "column",
+                              md: "row",
+                              xl: "row",
+                            },
                           }}
                         >
-                          Akther shopping city (3rd floor, unit-4b) Modina
-                          market, Sylhet-3100
-                        </Typography>
+                          <Box
+                            sx={{
+                              marginRight: {
+                                xs: "0px",
+                                md: "16px",
+                                xl: "16px",
+                              },
+                            }}
+                          >
+                            <Image
+                              src="/assets/images/address.svg"
+                              alt="address icon"
+                              width={50}
+                              height={50}
+                            />
+                          </Box>
+                          <Box
+                            sx={{
+                              textAlign: {
+                                xs: "center",
+                                md: "left",
+                                xl: "left",
+                              },
+                            }}
+                          >
+                            <Typography
+                              sx={{
+                                fontFamily: "Lato",
+                                fontStyle: "normal",
+                                fontWeight: "400",
+                                fontSize: "16px",
+                                lineHeight: "26px",
+                                color: "#F4F4F4",
+                                opacity: "0.6",
+                              }}
+                            >
+                              Akther shopping city (3rd floor, unit-4b) Modina
+                              market, Sylhet-3100
+                            </Typography>
+                          </Box>
+                        </Box>
                       </Item>
                     </Grid>
-                    <Grid item xs={12} md={2} xl={2}>
+                    <Grid item xs={12} md={12} xl={12}>
                       <Item>
-                        <Image
-                          src="/assets/images/phone.svg"
-                          alt="phone icon"
-                          width={36.11}
-                          height={36.11}
-                        />
-                      </Item>
-                    </Grid>
-                    <Grid item xs={12} md={10} xl={10}>
-                      <Item sx={{ textAlign: "left" }}>
-                        <Typography
+                        <Box
                           sx={{
-                            fontFamily: "Lato",
-                            fontStyle: "normal",
-                            fontWeight: "400",
-                            fontSize: "16px",
-                            lineHeight: "26px",
-                            color: "#F4F4F4",
-                            opacity: "0.6",
+                            display: "flex",
+                            alignItems: "center",
+                            flexDirection: {
+                              xs: "column",
+                              md: "row",
+                              xl: "row",
+                            },
                           }}
                         >
-                          (+880) 1706-523457
-                        </Typography>
+                          <Box
+                            sx={{
+                              marginRight: {
+                                xs: "0px",
+                                md: "16px",
+                                xl: "16px",
+                              },
+                            }}
+                          >
+                            <Image
+                              src="/assets/images/phone.svg"
+                              alt="address icon"
+                              width={42}
+                              height={42}
+                            />
+                          </Box>
+                          <Box
+                            sx={{
+                              textAlign: {
+                                xs: "center",
+                                md: "left",
+                                xl: "left",
+                              },
+                            }}
+                          >
+                            <Typography
+                              sx={{
+                                fontFamily: "Lato",
+                                fontStyle: "normal",
+                                fontWeight: "400",
+                                fontSize: "16px",
+                                lineHeight: "26px",
+                                color: "#F4F4F4",
+                                opacity: "0.6",
+                              }}
+                            >
+                              (+880) 1706-523457
+                            </Typography>
+                          </Box>
+                        </Box>
                       </Item>
                     </Grid>
-                    <Grid item xs={12} md={2} xl={2}>
+
+                    <Grid item xs={12} md={12} xl={12}>
                       <Item>
-                        <Image
-                          src="/assets/images/email.svg"
-                          alt="email icon"
-                          width={36.11}
-                          height={36.11}
-                        />
-                      </Item>
-                    </Grid>
-                    <Grid item xs={12} md={10} xl={10}>
-                      <Item sx={{ textAlign: "left" }}>
-                        <Typography
+                        <Box
                           sx={{
-                            fontFamily: "Lato",
-                            fontStyle: "normal",
-                            fontWeight: "400",
-                            fontSize: "16px",
-                            lineHeight: "26px",
-                            color: "#F4F4F4",
-                            opacity: "0.6",
+                            display: "flex",
+                            alignItems: "center",
+                            flexDirection: {
+                              xs: "column",
+                              md: "row",
+                              xl: "row",
+                            },
                           }}
                         >
-                          techofic@gmail.com
-                        </Typography>
+                          <Box
+                            sx={{
+                              marginRight: {
+                                xs: "0px",
+                                md: "16px",
+                                xl: "16px",
+                              },
+                            }}
+                          >
+                            <Image
+                              src="/assets/images/email.svg"
+                              alt="address icon"
+                              width={42}
+                              height={42}
+                            />
+                          </Box>
+                          <Box
+                            sx={{
+                              textAlign: {
+                                xs: "center",
+                                md: "left",
+                                xl: "left",
+                              },
+                            }}
+                          >
+                            <Typography
+                              sx={{
+                                fontFamily: "Lato",
+                                fontStyle: "normal",
+                                fontWeight: "400",
+                                fontSize: "16px",
+                                lineHeight: "26px",
+                                color: "#F4F4F4",
+                                opacity: "0.6",
+                              }}
+                            >
+                              techofic@gmail.com
+                            </Typography>
+                          </Box>
+                        </Box>
                       </Item>
                     </Grid>
                   </Grid>
@@ -470,6 +562,7 @@ export default function Footer() {
                     lineHeight: "19px",
                     color: "#F4F4F4",
                     opacity: "0.6",
+                    marginBottom:'-20px'
                   }}
                 >
                   &copy; 2022 All Rights Reserved. Design By{" "}

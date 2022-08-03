@@ -66,7 +66,7 @@ export default function BootcampRegistration() {
               container
               spacing={2}
               sx={{
-                padding: { xs: "40px 0px", md: "84px 0px", xl: "84px 0px" },
+                padding: { xs: "40px 0px", md: "84px 0px", xl: "60px 0px" },
               }}
             >
               <Grid item xs={12} md={6} xl={6}>
@@ -290,7 +290,6 @@ export default function BootcampRegistration() {
                       fontSize: "16px",
                       lineHeight: "26px",
                       color: "#A0A0A0",
-                      marginBottom: "40px",
                     }}
                   >
                     We will start our Bootcamp in the middle of August 2022
