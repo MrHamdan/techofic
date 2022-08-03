@@ -132,6 +132,7 @@ export default function Contact() {
                       {...register("Name")}
                       placeholder="Enter your name here..."
                       className={Styles.contact_form_name}
+                      required
                     />{" "}
                     <br />
                     <Typography
@@ -151,6 +152,7 @@ export default function Contact() {
                       {...register("Email")}
                       placeholder="Enter your email here..."
                       className={Styles.contact_form_email}
+                      required
                     />{" "}
                     <br />
                     <Typography
@@ -169,6 +171,7 @@ export default function Contact() {
                     <select
                       {...register("interest")}
                       className={Styles.contact_form_interest}
+                      required
                     >
                       <option
                         value="Web Development"
@@ -206,12 +209,12 @@ export default function Contact() {
                     <textarea
                       {...register("description")}
                       className={Styles.contact_form_description}
+                      required
                     />{" "}
                     <br />
                     <Typography sx={{ marginBottom: "26px" }}>
                       <Checkbox
                         {...register("terms")}
-                        required
                         sx={{
                           color: "#727272",
                           "&:hover": {
@@ -221,6 +224,7 @@ export default function Contact() {
                             color: "#FEBC14",
                           },
                         }}
+                        required
                       />
                       <Typography
                         component="span"

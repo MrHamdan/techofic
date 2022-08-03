@@ -104,6 +104,9 @@ text-transform: none;
 border-radius: 15px;
 background-color: transparent;
 color:white;
+padding-left: 35px;
+  background: url("/assets/images/nameinputicon.svg") no-repeat left 10px center;
+  background-size: 16px;
 }
 
 .contact_form_name:hover{
@@ -121,6 +124,8 @@ color:white;
 .contact_form_name:focus{
     outline: none;
     border: 1px solid #FEBC14;
+    background: none;
+    padding-left: 10px;
 }
 
 .contact_form_description:hover{
@@ -130,6 +135,8 @@ color:white;
 .contact_form_email:focus{
     outline: none;
     border: 1px solid #FEBC14;
+    background: none;
+    padding-left: 10px;
 }
 
 .contact_form_interest:focus{
@@ -156,6 +163,9 @@ color:white;
 border-radius: 15px;
 background-color: transparent;
 color:white;
+padding-left: 35px;
+  background: url("/assets/images/emailinputicon.svg") no-repeat left 10px center;
+  background-size: 16px;
 }
 
 .contact_form_interest{
@@ -171,7 +181,7 @@ color:white;
 border-radius: 15px;
 background-color: transparent;
 color:white;
-background: url('/assets/images/1.svg') no-repeat right transparent;
+background: url('/assets/images/downarrow.svg') no-repeat right transparent;
 background-size: 16px;
     -webkit-appearance: none;
     background-position-x: 97%;
