@@ -540,8 +540,8 @@ export default function BootcampRegistration() {
                                     border: "2px solid #8752A1",
                                     position: "absolute",
                                     borderRadius: "10px",
-                                    marginLeft: "-8px",
-                                    marginTop: "-6px",
+                                    marginRight: "8px",
+                                    marginTop: "-8px",
                                   }}
                                 ></Box>
                                 <BootcampFormButton type="submit">
