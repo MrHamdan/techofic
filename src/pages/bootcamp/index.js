@@ -1,12 +1,15 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import Bootcamp from '../../components/bootcamp/Bootcamp';
 
-const index = () => {
+
+const Index = () => {
+   
     return (
         <div>
-            <Bootcamp/>
+            <Bootcamp />
         </div>
     );
 };
 
-export default index;
+export default Index;

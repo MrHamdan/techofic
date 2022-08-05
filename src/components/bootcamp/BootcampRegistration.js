@@ -9,6 +9,8 @@ import Footer from "../shared/Footer";
 import { useForm } from "react-hook-form";
 import Styles from "../../styles/BootcampRegistration.module.css";
 import Swal from "sweetalert2";
+import { useSelector, useDispatch } from "react-redux";
+import { createBlog } from "../../store/actions/actions";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -38,13 +40,18 @@ const BootcampFormButton = styled(Button)({
 });
 
 export default function BootcampRegistration() {
+  const dispatch = useDispatch();
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+   const onSubmit = async (data , e ) => {
+
+ 
+    await dispatch(createBlog(data));
+
     Swal.fire({
       position: "middle",
       icon: "success",
@@ -52,6 +59,7 @@ export default function BootcampRegistration() {
       showConfirmButton: false,
       timer: 1500,
     });
+    e.target.reset(); 
     console.log(data);
   };
 
@@ -360,6 +368,8 @@ export default function BootcampRegistration() {
                           </Typography>
                           <Box>
                             <form onSubmit={handleSubmit(onSubmit)}>
+                            <Grid container spacing={2}>
+                            <Grid item xs={6}>
                               <Typography
                                 sx={{
                                   fontFamily: "Lato",
@@ -371,15 +381,39 @@ export default function BootcampRegistration() {
                                   marginBottom: "10px",
                                 }}
                               >
-                                Full Name:
+                                First Name
                               </Typography>
                               <input
-                                label="Name"
-                                {...register("Name")}
+                                label="First Name"
+                                {...register("first_name")}
                                 placeholder="Enter your name here..."
                                 className={Styles.contact_form_name}
                                 required
                               />{" "}
+                              </Grid>
+                            <Grid item xs={6}>
+                              <Typography
+                                sx={{
+                                  fontFamily: "Lato",
+                                  fontStyle: "normal",
+                                  fontWeight: "400",
+                                  fontSize: "14px",
+                                  lineHeight: "17px",
+                                  color: "#FFFFFF",
+                                  marginBottom: "10px",
+                                }}
+                              >
+                                Last Name
+                              </Typography>
+                              <input
+                                label="Last Name"
+                                {...register("last_name")}
+                                placeholder="Enter your name here..."
+                                className={Styles.contact_form_name}
+                                required
+                              />{" "}
+                              </Grid>
+                              </Grid>
                               <br />
                               <Typography
                                 sx={{
@@ -395,7 +429,7 @@ export default function BootcampRegistration() {
                                 Email:
                               </Typography>
                               <input
-                                {...register("Email")}
+                                {...register("email")}
                                 placeholder="Enter your email here..."
                                 className={Styles.contact_form_email}
                                 required
@@ -415,7 +449,7 @@ export default function BootcampRegistration() {
                                 Phone Number:
                               </Typography>
                               <input
-                                {...register("Phone")}
+                                {...register("phone")}
                                 placeholder="Enter your number here..."
                                 className={Styles.contact_form_phone}
                                 required
@@ -431,13 +465,54 @@ export default function BootcampRegistration() {
                                   marginBottom: "10px",
                                 }}
                               >
-                                What are you interested in?:
+                               Profession
                               </Typography>
                               <select
-                                {...register("interest")}
+                                {...register("profession")}
+                                placeholder="Select Your Profession"
                                 className={Styles.contact_form_interest}
                                 required
                               >
+                                {/* <option
+                                  value=""
+                                  disabled
+                                  className={Styles.contact_form_option}
+                                >
+                                  Select Your Profession
+                                </option> */}
+                                <option
+                                  value="Student"
+                                  className={Styles.contact_form_option}
+                                >
+                                  Student
+                                </option>
+                                <option
+                                  value="Job Holder"
+                                  className={Styles.contact_form_option}
+                                >
+                                  Job Holder
+                                </option>
+                              </select>{" "}
+                              <Typography
+                                sx={{
+                                  fontFamily: "Lato",
+                                  fontStyle: "normal",
+                                  fontWeight: "400",
+                                  fontSize: "14px",
+                                  lineHeight: "17px",
+                                  color: "#FFFFFF",
+                                  marginBottom: "10px",
+                                }}
+                              >
+                                What are you interested in?:
+                              </Typography>
+                              <select
+                                {...register("interest_type")}
+                               
+                                className={Styles.contact_form_interest}
+                                required
+                              >
+                                
                                 <option
                                   value="Web Development"
                                   className={Styles.contact_form_option}
@@ -482,48 +557,7 @@ export default function BootcampRegistration() {
                                   marginTop: "-30px",
                                 }}
                               >
-                                <Checkbox
-                                  {...register("terms")}
-                                  sx={{
-                                    color: "#727272",
-                                    "&:hover": {
-                                      color: "#febc14",
-                                    },
-                                    "&.Mui-checked": {
-                                      color: "#FEBC14",
-                                    },
-                                  }}
-                                  required
-                                />
-                                <Typography
-                                  component="span"
-                                  sx={{
-                                    fontFamily: "Lato",
-                                    fontStyle: "normal",
-                                    fontWeight: "400",
-                                    fontSize: "14px",
-                                    lineHeight: "17px",
-                                    color: "#FFFFFF",
-                                    opacity: "0.4",
-                                    marginLeft: "8px",
-                                    marginRight: "4px",
-                                  }}
-                                >
-                                  By sumitting you agree to our
-                                </Typography>
-                                <Typography
-                                  component="span"
-                                  sx={{
-                                    fontFamily: "Lato",
-                                    fontStyle: "normal",
-                                    fontWeight: "700",
-                                    fontSize: "14px",
-                                    lineHeight: "17px",
-                                    color: "#FFFFFF",
-                                  }}
-                                >
-                                  Terms & Policy
-                                </Typography>
+                                
                               </Typography>
                               <Box
                                 sx={{
