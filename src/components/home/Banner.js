@@ -6,7 +6,7 @@ import Grid from "@mui/material/Grid";
 import Styles from "../../styles/Banner.module.css";
 import { Button, Container, Typography } from "@mui/material";
 import Image from "next/image";
-
+import Link from "next/link";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
@@ -121,7 +121,9 @@ export default function Banner() {
                     margin: "-6px",
                   }}
                 ></Box>
-                <BannerButton>Lets Talk</BannerButton>
+                <Link href='#touch'>
+                  <BannerButton>Lets Talk</BannerButton>
+                </Link>
               </Box>
             </Item>
           </Grid>

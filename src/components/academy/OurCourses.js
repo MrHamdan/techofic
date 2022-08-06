@@ -141,7 +141,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>
@@ -245,7 +245,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>
@@ -349,7 +349,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>
@@ -453,7 +453,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>
@@ -557,7 +557,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>
@@ -661,7 +661,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>
@@ -765,7 +765,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>
@@ -884,7 +884,7 @@ export default function OurCourses() {
                       }}
                       className={Styles.ourcourse_link}
                     >
-                      <Link href="/">View Details</Link>
+                      {/* <Link href="/">View Details</Link> */}
                     </Typography>
                   </CardActions>
                 </Card>

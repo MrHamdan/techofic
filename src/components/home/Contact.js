@@ -64,7 +64,7 @@ export default function Contact() {
 
   // console.log(watch("example"));
   return (
-    <Box sx={{ backgroundColor: "#1d1d1d", padding: "74px 0px" }}>
+    <Box sx={{ backgroundColor: "#1d1d1d", padding: "74px 0px" }} id="touch">
       <Box sx={{ flexGrow: 1 }}>
         <Container maxWidth="xl">
           <Grid
@@ -507,7 +507,7 @@ export default function Contact() {
                                 opacity: "0.6",
                               }}
                             >
-                              (+880) 1706-523457
+                              (+880) 1703-759609 , (+880) 1706-523457
                             </Typography>
                           </Box>
                         </Box>
@@ -578,7 +578,7 @@ export default function Contact() {
                                 opacity: "0.6",
                               }}
                             >
-                              (+880) 1706-523457
+                              contact@techofic.com
                             </Typography>
                           </Box>
                         </Box>

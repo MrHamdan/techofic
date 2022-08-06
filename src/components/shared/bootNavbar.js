@@ -267,11 +267,13 @@ const Navbar = (props) => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
+            <Link href='/#touch'>
               <ContactUsButton
                 sx={{ display: { xs: "none", md: "block", xl: "block" } }}
               >
                 Contact Us
               </ContactUsButton>
+              </Link>
             </Box>
           </Toolbar>
         </Container>

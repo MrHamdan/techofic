@@ -122,7 +122,7 @@ export default function AcademyBanner() {
                         marginTop: "-6px",
                       }}
                     ></Box>
-                    <Link href='/bootcamp'>
+                    <Link href='/bootcamp/uiux'>
                       <AcademyGetRegistered>
                         Get Registered
                       </AcademyGetRegistered>

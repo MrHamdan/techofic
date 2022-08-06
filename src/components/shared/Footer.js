@@ -478,7 +478,7 @@ export default function Footer() {
                                 opacity: "0.6",
                               }}
                             >
-                              (+880) 1706-523457
+                              (+880) 1703-759609 , (+880) 1706-523457
                             </Typography>
                           </Box>
                         </Box>
@@ -534,7 +534,7 @@ export default function Footer() {
                                 opacity: "0.6",
                               }}
                             >
-                              techofic@gmail.com
+                              contact@techofic.com
                             </Typography>
                           </Box>
                         </Box>
