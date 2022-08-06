@@ -101,7 +101,7 @@ const Navbar = (props) => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
-        {/* <ListItem disablePadding>
+        <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText
               sx={{
@@ -114,8 +114,8 @@ const Navbar = (props) => {
               <Link href="/">About Us</Link>
             </ListItemText>
           </ListItemButton>
-        </ListItem> */}
-        {/* <ListItem disablePadding>
+        </ListItem>
+        <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText
               sx={{
@@ -128,7 +128,7 @@ const Navbar = (props) => {
               <Link href="/">Services</Link>
             </ListItemText>
           </ListItemButton>
-        </ListItem> */}
+        </ListItem>
         <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText

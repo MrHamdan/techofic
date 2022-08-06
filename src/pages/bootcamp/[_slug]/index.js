@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import Bootcamp from '../../components/bootcamp/Bootcamp';
+import Bootcamp from '../../../components/bootcamp/Bootcamp';
 
 
 const Index = () => {
