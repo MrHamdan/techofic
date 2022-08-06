@@ -101,6 +101,20 @@ const Navbar = (props) => {
             </ListItemText>
           </ListItemButton>
         </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemText
+              sx={{
+                color: "#9E9E9E",
+                "&:hover": {
+                  color: "#febc14",
+                },
+              }}
+            >
+              <Link href="/bootcamp/uiux">Bootcamp</Link>
+            </ListItemText>
+          </ListItemButton>
+        </ListItem>
         {/* <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText
@@ -129,7 +143,7 @@ const Navbar = (props) => {
             </ListItemText>
           </ListItemButton>
         </ListItem> */}
-        <ListItem disablePadding>
+        {/* <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText
               sx={{
@@ -142,8 +156,8 @@ const Navbar = (props) => {
               <Link href="/">Products</Link>
             </ListItemText>
           </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
+        </ListItem> */}
+        {/* <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText
               sx={{
@@ -156,8 +170,8 @@ const Navbar = (props) => {
               <Link href="/">Blogs</Link>
             </ListItemText>
           </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
+        </ListItem> */}
+        {/* <ListItem disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
             <ListItemText
               sx={{
@@ -170,7 +184,7 @@ const Navbar = (props) => {
               <Link href="/">Pages</Link>
             </ListItemText>
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
       </List>
     </Box>
   );
@@ -256,32 +270,38 @@ const Navbar = (props) => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block" }}
               >
-                <Link href="/">About Us</Link>
+                <Link href="/bootcamp/uiux">Bootcamp</Link>
               </CustomLinkButton>
-              <CustomLinkButton
+              {/* <CustomLinkButton
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, display: "block" }}
+              >
+                <Link href="/">About Us</Link>
+              </CustomLinkButton> */}
+              {/* <CustomLinkButton
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Services</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
+              </CustomLinkButton> */}
+              {/* <CustomLinkButton
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Products</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
+              </CustomLinkButton> */}
+              {/* <CustomLinkButton
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Blogs</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
+              </CustomLinkButton> */}
+              {/* <CustomLinkButton
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block" }}
               >
                 <Link href="/">Pages</Link>
-              </CustomLinkButton>
+              </CustomLinkButton> */}
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>

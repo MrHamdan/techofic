@@ -8,7 +8,10 @@ import Service from './Service';
 import Solutions from './Solutions';
 import WhyChoose from './WhyChoose';
 
+
+
 const Homepage = () => {
+    
     return (
         <div>
             <Navbar color='#1d1d1d'/>

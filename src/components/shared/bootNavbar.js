@@ -17,13 +17,30 @@ import Styles from "../../styles/Navbar.module.css";
 import { styled } from "@mui/material/styles";
 import Link from "next/link";
 import { Divider, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
-
+import { useRouter } from 'next/router'
 
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
 
-const pages = ["About Us", "Services", "Products", "Blogs", "Pages"];
+const pages = [
+  {
+    title: "UI/UX Design",
+    href: "/bootcamp/uiux",
+  },
+  {
+    title: "App Development",
+    href: "/bootcamp/app_development",
+  },
+  {
+    title: "Frontend Development",
+    href: "/bootcamp/frontend_development",
+  },
+  {
+    title: "Backedn Development",
+    href: "/bootcamp/backend_development",
+  }
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const CustomLinkButton = styled(Button)({
@@ -37,6 +54,16 @@ const CustomLinkButton = styled(Button)({
   "&:hover": {
     color: "#febc14",
   },
+});
+const CustomLinkButtonActive = styled(Button)({
+  fontFamily: "Lato",
+  fontStyle: "normal",
+  fontWeight: "500",
+  fontSize: "18px",
+  lineHeight: "26px",
+  color: "#9E9E9E",
+  textTransform: "none",
+  color: "#febc14",
 });
 
 const ContactUsButton = styled(Button)({
@@ -59,6 +86,8 @@ const ContactUsButton = styled(Button)({
 });
 
 const Navbar = (props) => {
+  const router = useRouter();
+  const pathName = router.asPath;
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -97,7 +126,7 @@ const Navbar = (props) => {
                 },
               }}
             >
-              <Link href="/academy">Academy</Link>
+              <Link href="/bootcamp/uiux">UI/UX</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
@@ -111,7 +140,7 @@ const Navbar = (props) => {
                 },
               }}
             >
-              <Link href="/">About Us</Link>
+              <Link href="/bootcamp/app_development">App Developmemnt</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
@@ -125,7 +154,7 @@ const Navbar = (props) => {
                 },
               }}
             >
-              <Link href="/">Services</Link>
+              <Link href="frontend_development">Frontend Development</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
@@ -139,35 +168,7 @@ const Navbar = (props) => {
                 },
               }}
             >
-              <Link href="/">Products</Link>
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText
-              sx={{
-                color: "#9E9E9E",
-                "&:hover": {
-                  color: "#febc14",
-                },
-              }}
-            >
-              <Link href="/">Blogs</Link>
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton sx={{ textAlign: "center" }}>
-            <ListItemText
-              sx={{
-                color: "#9E9E9E",
-                "&:hover": {
-                  color: "#febc14",
-                },
-              }}
-            >
-              <Link href="/">Pages</Link>
+              <Link href="backend_development">Backend Development</Link>
             </ListItemText>
           </ListItemButton>
         </ListItem>
@@ -246,42 +247,23 @@ const Navbar = (props) => {
                 justifyContent: "center",
               }}
             >
-              <CustomLinkButton
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-              >
-                <Link href="/academy">Academy</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-              >
-                <Link href="/">About Us</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-              >
-                <Link href="/">Services</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-              >
-                <Link href="/">Products</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-              >
-                <Link href="/">Blogs</Link>
-              </CustomLinkButton>
-              <CustomLinkButton
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-              >
-                <Link href="/">Pages</Link>
-              </CustomLinkButton>
+              {
+                pages.map((p,index)=> 
+                    <Link href={p.href}>
+                      { pathName == p.href ?
+                        <CustomLinkButtonActive key={index} onClick={handleCloseNavMenu} sx={{ my: 2, display: "block" }}>
+                        {p.title}
+                      </CustomLinkButtonActive>
+                      :
+                        <CustomLinkButton key={index} onClick={handleCloseNavMenu} sx={{ my: 2, display: "block" }}>
+                        {p.title}
+                      </CustomLinkButton>
+                       }
+                      
+                    </Link>
+                )
+              }
+            
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>

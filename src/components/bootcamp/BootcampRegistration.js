@@ -4,15 +4,19 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Button, Checkbox, Container, Typography } from "@mui/material";
-import Navbar from "../shared/Navbar";
+import Navbar from "../shared/bootNavbar";
 import Footer from "../shared/Footer";
 import { useForm } from "react-hook-form";
 import Styles from "../../styles/BootcampRegistration.module.css";
 import Swal from "sweetalert2";
 import { useSelector, useDispatch } from "react-redux";
 import { createBlog } from "../../store/actions/actions";
+import { useRouter } from 'next/router'
 
 import Uiux from './Uiux';
+import AppDevelopment from './AppDevelopment';
+import BackendDevelopment from './BackendDevelopment';
+import FrontendDevelopment from './FrontendDevelopment';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -42,6 +46,8 @@ const BootcampFormButton = styled(Button)({
 });
 
 export default function BootcampRegistration() {
+  const router = useRouter();
+  const pathName = router.asPath;
   const dispatch = useDispatch();
   const {
     register,
@@ -68,6 +74,7 @@ export default function BootcampRegistration() {
   // console.log(watch("example"));
   return (
     <Box>
+
       <Navbar color="#323232" />
       <Box sx={{ backgroundColor: "#1d1d1d" }}>
         <Container maxWidth="xl">
@@ -79,7 +86,11 @@ export default function BootcampRegistration() {
                 padding: { xs: "40px 0px", md: "84px 0px", xl: "60px 0px" },
               }}
             >
-              <Uiux/>
+              { pathName === "/bootcamp/uiux" ? <Uiux /> :<></> }
+              { pathName === "/bootcamp/app_development" ? <AppDevelopment /> :<></> }
+              { pathName === "/bootcamp/frontend_development" ? <FrontendDevelopment /> :<></> }
+              { pathName === "/bootcamp/backend_development" ? <BackendDevelopment /> :<></> }
+              
               {/* <Grid item xs={12} md={6} xl={6}>
                 <Item sx={{ marginBottom: "20px" }}>
                   <Typography
@@ -352,7 +363,7 @@ export default function BootcampRegistration() {
                                     marginTop: "-8px",
                                   }}
                                 ></Box>
-                                <BootcampFormButton type="submit">
+                                <BootcampFormButton type="submit"  disabled={pathName != '/bootcamp/uiux'} >
                                   Submit
                                 </BootcampFormButton>
                               </Box>
