@@ -249,13 +249,13 @@ const Navbar = (props) => {
             >
               {
                 pages.map((p,index)=> 
-                    <Link href={p.href}>
+                    <Link href={p.href} key={index}>
                       { pathName == p.href ?
-                        <CustomLinkButtonActive key={index} onClick={handleCloseNavMenu} sx={{ my: 2, display: "block" }}>
+                        <CustomLinkButtonActive  onClick={handleCloseNavMenu} sx={{ my: 2, display: "block" }}>
                         {p.title}
-                      </CustomLinkButtonActive>
+                      </CustomLinkButtonActive >
                       :
-                        <CustomLinkButton key={index} onClick={handleCloseNavMenu} sx={{ my: 2, display: "block" }}>
+                        <CustomLinkButton  onClick={handleCloseNavMenu} sx={{ my: 2, display: "block" }}>
                         {p.title}
                       </CustomLinkButton>
                        }
