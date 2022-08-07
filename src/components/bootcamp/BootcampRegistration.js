@@ -172,7 +172,7 @@ export default function BootcampRegistration() {
                               <input
                                 label="First Name"
                                 {...register("first_name")}
-                                placeholder="Enter your name here..."
+                                placeholder="Enter your first name here..."
                                 className={Styles.contact_form_name}
                                 required
                               />{" "}
@@ -194,7 +194,7 @@ export default function BootcampRegistration() {
                               <input
                                 label="Last Name"
                                 {...register("last_name")}
-                                placeholder="Enter your name here..."
+                                placeholder="Enter your last  name here..."
                                 className={Styles.contact_form_name}
                                 required
                               />{" "}
@@ -363,7 +363,7 @@ export default function BootcampRegistration() {
                                     marginTop: "-8px",
                                   }}
                                 ></Box>
-                                <BootcampFormButton type="submit"  disabled={pathName != '/bootcamp/uiux'} >
+                                <BootcampFormButton type="submit"  disabled={pathName != 'uiux'} >
                                   Submit
                                 </BootcampFormButton>
                               </Box>
