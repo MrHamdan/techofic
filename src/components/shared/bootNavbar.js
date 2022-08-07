@@ -26,19 +26,19 @@ const navItems = ["Home", "About", "Contact"];
 const pages = [
   {
     title: "UI/UX Design",
-    href: "/bootcamp/uiux",
+    href: "uiux",
   },
   {
     title: "App Development",
-    href: "/bootcamp/app_development",
+    href: "app_development",
   },
   {
     title: "Frontend Development",
-    href: "/bootcamp/frontend_development",
+    href: "frontend_development",
   },
   {
     title: "Backedn Development",
-    href: "/bootcamp/backend_development",
+    href: "backend_development",
   }
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -87,7 +87,7 @@ const ContactUsButton = styled(Button)({
 
 const Navbar = (props) => {
   const router = useRouter();
-  const pathName = router.asPath;
+  const pathName = router.query._slug;
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
