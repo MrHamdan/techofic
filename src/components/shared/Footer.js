@@ -117,7 +117,7 @@ export default function Footer() {
                     cursor: "pointer",
                   }}
                 />{" "}
-                <a href="https://www.facebook.com/techofic.limited" target="_blank">
+                <a href="https://www.facebook.com/techofic.limited" target="_blank" rel="noopener noreferrer">
 
                 <FacebookIcon
                   sx={{
@@ -136,7 +136,7 @@ export default function Footer() {
                     cursor: "pointer",
                   }}
                 />{" "}
-                <a href="https://www.linkedin.com/company/techofic" target="_blank"> 
+                <a href="https://www.linkedin.com/company/techofic" target="_blank" rel="noopener noreferrer">
                 <LinkedInIcon
                   sx={{
                     color: "#727272",
