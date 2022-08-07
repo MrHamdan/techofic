@@ -47,7 +47,7 @@ const BootcampFormButton = styled(Button)({
 
 export default function BootcampRegistration() {
   const router = useRouter();
-  const pathName = router.asPath;
+  const pathName = router.query._slug;
   const dispatch = useDispatch();
   const {
     register,
@@ -86,10 +86,10 @@ export default function BootcampRegistration() {
                 padding: { xs: "40px 0px", md: "84px 0px", xl: "60px 0px" },
               }}
             >
-              { pathName === "/bootcamp/uiux" ? <Uiux /> :<></> }
-              { pathName === "/bootcamp/app_development" ? <AppDevelopment /> :<></> }
-              { pathName === "/bootcamp/frontend_development" ? <FrontendDevelopment /> :<></> }
-              { pathName === "/bootcamp/backend_development" ? <BackendDevelopment /> :<></> }
+              { pathName === "uiux" ? <Uiux /> :<></> }
+              { pathName === "app_development" ? <AppDevelopment /> :<></> }
+              { pathName === "frontend_development" ? <FrontendDevelopment /> :<></> }
+              { pathName === "backend_development" ? <BackendDevelopment /> :<></> }
               
               {/* <Grid item xs={12} md={6} xl={6}>
                 <Item sx={{ marginBottom: "20px" }}>
