@@ -117,6 +117,8 @@ export default function Footer() {
                     cursor: "pointer",
                   }}
                 />{" "}
+                <a href="https://www.facebook.com/techofic.limited" target="_blank">
+
                 <FacebookIcon
                   sx={{
                     color: "#727272",
@@ -124,7 +126,8 @@ export default function Footer() {
                     "&:hover": { color: "#FEBC14" },
                     cursor: "pointer",
                   }}
-                />{" "}
+                />
+                </a>{" "}
                 <TwitterIcon
                   sx={{
                     color: "#727272",
@@ -133,6 +136,7 @@ export default function Footer() {
                     cursor: "pointer",
                   }}
                 />{" "}
+                <a href="https://www.linkedin.com/company/techofic" target="_blank"> 
                 <LinkedInIcon
                   sx={{
                     color: "#727272",
@@ -140,6 +144,7 @@ export default function Footer() {
                     cursor: "pointer",
                   }}
                 />
+                </a>
               </Item>
             </Grid>
             <Grid item xs={12} md={2} xl={2}>
