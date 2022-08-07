@@ -59,7 +59,7 @@ export default function Banner() {
                   marginBottom: "24px",
                 }}
               >
-                We Execute{" "}
+                WHERE{" "}
                 <Typography
                   component="span"
                   sx={{
@@ -73,9 +73,9 @@ export default function Banner() {
                     textAlign: "left",
                   }}
                 >
-                  Dreams
+                  IMAGINATION
                 </Typography>{" "}
-                Into{" "}
+                MEETS{" "}
                 <Typography
                   component="span"
                   sx={{
@@ -89,7 +89,7 @@ export default function Banner() {
                     textAlign: "left",
                   }}
                 >
-                  Softwares
+                  INNOVATION
                 </Typography>
               </Typography>
               <Typography
