@@ -37,7 +37,7 @@ const pages = [
     href: "frontend_development",
   },
   {
-    title: "Backedn Development",
+    title: "Backend Development",
     href: "backend_development",
   }
 ];
