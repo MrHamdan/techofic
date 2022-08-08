@@ -48,13 +48,34 @@ const BootcampFormButton = styled(Button)({
 export default function BootcampRegistration() {
   const router = useRouter();
   const pathName = router.query._slug;
+  let defaultInterest ="UI/UX Design";
+  if(pathName === "app_development"){
+    defaultInterest = "App Development";
+  }else if(pathName === "backend_development"){
+    defaultInterest = "Backend Development";
+  }else if(pathName === "frontend_development"){
+    defaultInterest = "Frontend Development";
+  }
+  const {register, handleSubmit, watch,formState: { errors }, setValue} = useForm({
+    defaultValues: {
+      first_name: '',
+      last_name: '',
+      email: '',
+      phone: '',
+      profession: '',
+      interest_type: '',
+    }
+  });
+
+  setValue('interest_type', defaultInterest);
+ 
+
+  console.log('register')
+  console.log(register)
+
   const dispatch = useDispatch();
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
+
+
    const onSubmit = async (data , e ) => {
 
  
@@ -68,7 +89,6 @@ export default function BootcampRegistration() {
       timer: 1500,
     });
     e.target.reset(); 
-    console.log(data);
   };
 
   // console.log(watch("example"));
@@ -306,16 +326,16 @@ export default function BootcampRegistration() {
                                 </option>
                                 
                                 <option
-                                  value="Web Frontend Development"
+                                  value="Frontend Development"
                                   className={Styles.contact_form_option}
                                 >
-                                  Web Development
+                                  Frontend Development
                                 </option>
                                 <option
-                                  value="Web Backend Development"
+                                  value="Backend Development"
                                   className={Styles.contact_form_option}
                                 >
-                                  Web Development
+                                  Backend Development
                                 </option>
                                 <option
                                   value="App Development"
@@ -370,7 +390,7 @@ export default function BootcampRegistration() {
                                     marginTop: "-8px",
                                   }}
                                 ></Box>
-                                <BootcampFormButton type="submit"  disabled={pathName != 'uiux'} >
+                                <BootcampFormButton type="submit"  >
                                   Submit
                                 </BootcampFormButton>
                               </Box>
