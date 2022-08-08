@@ -298,9 +298,21 @@ export default function BootcampRegistration() {
                                 className={Styles.contact_form_interest}
                                 required
                               >
+                                <option
+                                  value="UI/UX Design"
+                                  className={Styles.contact_form_option}
+                                >
+                                  UI/UX Design
+                                </option>
                                 
                                 <option
-                                  value="Web Development"
+                                  value="Web Frontend Development"
+                                  className={Styles.contact_form_option}
+                                >
+                                  Web Development
+                                </option>
+                                <option
+                                  value="Web Backend Development"
                                   className={Styles.contact_form_option}
                                 >
                                   Web Development
@@ -311,12 +323,7 @@ export default function BootcampRegistration() {
                                 >
                                   App Development
                                 </option>
-                                <option
-                                  value="UI/UX Design"
-                                  className={Styles.contact_form_option}
-                                >
-                                  UI/UX Design
-                                </option>
+                                
                               </select>{" "}
                               <br />
                               {/* <Typography

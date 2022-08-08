@@ -188,7 +188,7 @@ export default function Solutions() {
                         color: "#F4F4F4",
                       }}
                     >
-                      Our Vission
+                      Our Vision
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
