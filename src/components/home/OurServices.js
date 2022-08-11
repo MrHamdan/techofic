@@ -149,6 +149,7 @@ export default function OurServices() {
                       alt="mobileapp picture"
                       width={80}
                       height={80}
+                      className={Styles.img_style}
                     />
                     <Typography
                       sx={{
@@ -216,6 +217,7 @@ export default function OurServices() {
                       alt="digitalmarketing picture"
                       width={80}
                       height={80}
+                      className={Styles.img_style}
                     />
                     <Typography
                       sx={{
@@ -283,6 +285,7 @@ export default function OurServices() {
                       alt="uiuxdesign picture"
                       width={80}
                       height={80}
+                      className={Styles.img_style}
                     />
                     <Typography
                       sx={{

@@ -1,0 +1,30 @@
+.popularcourses_item:hover{
+    border: 1px solid #febe14;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.popularcourses_item:hover .box_design{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border: 1px solid #FEBC14;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: -8px !important;
+    margin-left: -8px !important;
+}
+
+.popularcourses_item:hover .img_style{
+    width: 80px !important;
+    height: 80px !important;
+    border: 1px solid #FEBC14 !important;
+    border-radius: 10px;
+    
+}
+
+
+.popularcourses_item:hover .popularcourses_link{
+    color: #FEBC14 ;
+    opacity: 1 ;
+}

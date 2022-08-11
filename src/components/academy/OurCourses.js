@@ -7,7 +7,7 @@ import { Button, Card, CardActions, CardContent, CardMedia, Container, Typograph
 import Image from "next/image";
 import Link from "next/link";
 import Styles from "../../styles/OurCourses.module.css";
-import Footer from "../shared/Footer";
+
 
 
 
@@ -893,7 +893,6 @@ export default function OurCourses() {
           </Grid>
         </Box>
       </Container>
-      <Footer />
     </Box>
   );
 }

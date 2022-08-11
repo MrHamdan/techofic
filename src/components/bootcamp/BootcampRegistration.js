@@ -4,8 +4,6 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Button, Checkbox, Container, Typography } from "@mui/material";
-import Navbar from "../shared/Navbar";
-import Footer from "../shared/Footer";
 import { useForm } from "react-hook-form";
 import Styles from "../../styles/BootcampRegistration.module.css";
 import Swal from "sweetalert2";
@@ -58,7 +56,7 @@ export default function BootcampRegistration() {
   // console.log(watch("example"));
   return (
     <Box>
-      <Navbar color="#323232" />
+      
       <Box sx={{ backgroundColor: "#1d1d1d" }}>
         <Container maxWidth="xl">
           <Box sx={{ flexGrow: 1 }}>
@@ -559,7 +557,7 @@ export default function BootcampRegistration() {
           </Box>
         </Container>
       </Box>
-      <Footer />
+      
     </Box>
   );
 }

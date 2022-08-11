@@ -38,7 +38,6 @@ const AcademyGetRegistered = styled(Button)({
 export default function AcademyBanner() {
   return (
     <Box>
-      <Navbar color="#343434" />
       <Box
         sx={{
           background: 'url("/assets/images/academybackground.svg")',
