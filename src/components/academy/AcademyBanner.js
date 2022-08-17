@@ -102,7 +102,7 @@ export default function AcademyBanner() {
                       marginBottom: "48px",
                     }}
                   >
-                    Start from - 21 August - 08:00PM - 10:00PM
+                    Starts from - 21 August - 08:00PM - 10:00PM
                   </Typography>
                   <Box
                     sx={{
