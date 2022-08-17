@@ -64,6 +64,7 @@ export default function BootcampRegistration() {
       phone: '',
       profession: '',
       interest_type: '',
+      city: '',
     }
   });
 
@@ -257,6 +258,25 @@ export default function BootcampRegistration() {
                               <input
                                 {...register("phone")}
                                 placeholder="Enter your number here..."
+                                className={Styles.contact_form_phone}
+                                required
+                              />{" "}
+                              <Typography
+                                sx={{
+                                  fontFamily: "Lato",
+                                  fontStyle: "normal",
+                                  fontWeight: "400",
+                                  fontSize: "14px",
+                                  lineHeight: "17px",
+                                  color: "#FFFFFF",
+                                  marginBottom: "10px",
+                                }}
+                              >
+                              City 
+                              </Typography>
+                              <input
+                                {...register("city")}
+                                placeholder="Enter your current city..."
                                 className={Styles.contact_form_phone}
                                 required
                               />{" "}
