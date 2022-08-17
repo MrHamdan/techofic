@@ -252,7 +252,7 @@ The selected candidates will be interviewed based on the assessment. Candidates 
                       color: "#A0A0A0",
                     }}
                   >
-                   We'll start the bootcamp from 27th August 2022.
+                   We will start the bootcamp from 27th August 2022.
                   </Typography>
                 </Item>
               </Grid>
