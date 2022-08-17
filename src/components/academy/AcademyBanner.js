@@ -46,7 +46,7 @@ export default function AcademyBanner() {
           backgroundPosition: "center",
           backgroundColor: "#727272",
           backgroundRepeat: "no-repeat",
-          paddingTop: {xs:'30px', md:'30px', xl:'185px'},
+          paddingTop: { xs: '30px', md: '30px', xl: '185px' },
         }}
       >
         <Container maxWidth="xxl">
@@ -102,7 +102,7 @@ export default function AcademyBanner() {
                       marginBottom: "48px",
                     }}
                   >
-                    24 August - 10:00am- 11:00am
+                    Start from - 21 August - 08:00PM - 10:00PM
                   </Typography>
                   <Box
                     sx={{
@@ -122,7 +122,7 @@ export default function AcademyBanner() {
                         marginTop: "-6px",
                       }}
                     ></Box>
-                    <Link href='/bootcamp/uiux'>
+                    <Link href='/bootcamp/app_development'>
                       <AcademyGetRegistered>
                         Get Registered
                       </AcademyGetRegistered>
