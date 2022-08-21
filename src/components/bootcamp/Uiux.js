@@ -33,7 +33,7 @@ export default function Uiux() {
                       marginBottom: "10px",
                     }}
                   >
-                    Registrations going on till 19 August 2022
+                    Registrations closed!!
                   </Typography>
                   <Typography
                     sx={{

@@ -341,6 +341,7 @@ export default function BootcampRegistration() {
                                 <option
                                   value="UI/UX Design"
                                   className={Styles.contact_form_option}
+                                  disabled
                                 >
                                   UI/UX Design
                                 </option>
@@ -410,7 +411,7 @@ export default function BootcampRegistration() {
                                     marginTop: "-8px",
                                   }}
                                 ></Box>
-                                <BootcampFormButton type="submit"  >
+                                <BootcampFormButton type="submit" disabled={pathName == 'uiux'? true : false} >
                                   Submit
                                 </BootcampFormButton>
                               </Box>

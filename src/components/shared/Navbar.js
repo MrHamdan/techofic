@@ -270,7 +270,7 @@ const Navbar = (props) => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: "block" }}
               >
-                <Link href="/bootcamp/uiux">Bootcamp</Link>
+                <Link href="/bootcamp/app_development">Bootcamp</Link>
               </CustomLinkButton>
               {/* <CustomLinkButton
                 onClick={handleCloseNavMenu}
