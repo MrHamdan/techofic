@@ -34,7 +34,7 @@ export default function AppDevelopment() {
                       marginBottom: "10px",
                     }}
                   >
-                    Registrations going on till 25 August 2022
+                    Registrations closed!!
                   </Typography>
                   <Typography
                     sx={{

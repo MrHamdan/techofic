@@ -411,7 +411,7 @@ export default function BootcampRegistration() {
                                     marginTop: "-8px",
                                   }}
                                 ></Box>
-                                <BootcampFormButton type="submit" disabled={pathName == 'uiux'? true : false} >
+                                <BootcampFormButton type="submit" disabled={pathName == 'uiux'|| pathName == 'app_development'? true : false} >
                                   Submit
                                 </BootcampFormButton>
                               </Box>
